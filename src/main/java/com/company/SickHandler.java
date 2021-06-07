@@ -1,0 +1,90 @@
+package com.company;
+
+import java.util.LinkedList;
+
+public class SickHandler extends InteractionHandler {
+    private Area[][] map;
+    private GameObject reference;
+    public int size;
+
+    public SickHandler(Area[][] map, GameObject reference, int size) {
+        this.map = map;
+        this.reference = reference;
+        this.size = size;
+    }
+
+    @Override
+    protected GameObject interaction(){
+        return null;
+    }
+
+
+    // JAK MEDYK W POBLIZU = TRUE TO ZAMIANA ZDROWEGO NA ZDROWEGO
+    public void transformationToHealthy(Area[][] map, LinkedList<Healthy> healthyList, LinkedList<Sick> sickList){
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (map[i][j].getField().getGameObjectReference() instanceof Sick) {
+                    if(isSickMedic(map, i, j)){
+                        Sick sick = (Sick) map[i][j].getField().getGameObjectReference();
+                        deleteSick(sick , sickList, i, j, map);
+                        addNewHealthy(healthyList, i, j, map);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    public boolean isSickMedic(Area[][] map, int a, int b){
+        for(int i = a-1; i<= a+1; i++){
+            for(int j = b-1; j <= b+1; j++){
+                if(i >= 0 && j >= 0 && i < size && j< size){
+                    if(map[i][j].getField().getGameObjectReference() instanceof Medic){
+                        return true;
+                    }
+                }
+            }
+        }
+        for(int i= a-2; i<= a+1; i++){
+            for(int j = b-1; j <= b+1; j++){
+                if(i >=0 && j >= 0 && i<size && j<size){
+                    if(map[i][j].getField().getGameObjectReference() instanceof Medic){
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+
+
+    //USUWANIE CHOREGO
+    private LinkedList<Sick> deleteSick(Sick sick, LinkedList<Sick> sickList, int x, int y, Area[][] map){
+        sickList = sick.killSick(sickList, sick);
+        if(map[x][y].getField().getGameObjectReference() != null){
+            map[x][y].getField().setGameObjectReference(null);
+        }else{
+            System.out.println("coś jest nie tak w uzdrawniau chorego (usuwanie chorego)");
+        }
+        Sick.numberOfSick--;
+        return sickList;
+    }
+
+
+
+    //DODAWANIE ZDROWEGO
+    private LinkedList<Healthy> addNewHealthy( LinkedList<Healthy> healthyList, int x, int y, Area[][] map){
+        Healthy healthy = new Healthy(false);
+        healthyList.add(healthy);
+        if(map[x][y].getField().getGameObjectReference() == null){
+            map[x][y].getField().setGameObjectReference(healthy);
+        }else {
+            System.out.println("coś jest nie tak w uzdrawnaniu chorego (dodawanie zdrowego)");
+        }
+        Healthy.numberOfHealthy++;
+        return healthyList;
+    }
+
+}
