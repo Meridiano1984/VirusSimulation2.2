@@ -8,9 +8,10 @@ public class Main {
 
         FileInformations fileInformations;
         FileCreator fileCreator =new FileCreator();
+        FileHandler fileHandler = new FileHandler();
 
         fileInformations = fileCreator.fileInitialization();
-
+        String sentence = new String();
 
 
         int size = 10;                                                       //     ZMIENNA UMOZLIWIAJACA ZMINE ROZMIARU TABLICY
@@ -49,6 +50,13 @@ public class Main {
         //PRZYKLADOWE PARE TUR PRZEMIESZCZANIA//
         Area.MapDisplay(map, size);
         for (int i = 0; i < 10; i++) {
+            Medic.medicToFile = 0;
+            SickMedic.sickMedicToFile = 0;
+            Healthy.healthyToFile = 0;
+            Sick.sickToFile = 0;
+            SickMedic.deathSickMedicToFile = 0;
+            Sick.deathSickToFile = 0;
+
             map = moveHandler.twoFieldHealthyMoveHandler(map, size);
             map = moveHandler.twoFieldMedicMoveHandler(map, size);
             map = moveHandler.oneFieldSickMoveHandler(map, size);
@@ -58,14 +66,14 @@ public class Main {
 //            System.out.println("Ruch                              TURA NR:"+(i+1)+   " TYLE SICK: " +gameObjectList.getSickList().size()+ "    TYLE HEALTHY:"  + gameObjectList.getHealthyList().size()  );
 //            Area.MapDisplay(map, size);
 //
-            healthyHandler.transformationToSick(map,virus,gameObjectList.getHealthyList(),gameObjectList.getSickList(),gameObjectList);
+            healthyHandler.transformationToSick(map,virus,gameObjectList.getHealthyList(),gameObjectList.getSickList());
 ////
 //            System.out.println(" ");
 //            System.out.println(" ");
 //            System.out.println("Zarazenie Zdrowego                 TURA NR:"+(i+1)+"   TYLE SICK: " +gameObjectList.getSickList().size()+ "    TYLE HEALTHY: " + gameObjectList.getHealthyList().size()  );
 //            Area.MapDisplay(map, size);
 //
-            medicHandler.transformationToSickMedic(map, virus, gameObjectList.getMedicList(), gameObjectList.getSickMedicList(),gameObjectList);
+            medicHandler.transformationToSickMedic(map, virus, gameObjectList.getMedicList(), gameObjectList.getSickMedicList());
 
 //            System.out.println(" ");
 //            System.out.println(" ");
@@ -75,25 +83,28 @@ public class Main {
 
             sickMedicHandler.checkingNumberOfIteration(map, gameObjectList.getSickMedicList(), gameObjectList.getMedicList(), medicHandler, size);
 
-            sickMedicHandler.transformationToMedicOrDying(map,gameObjectList.getMedicList(),gameObjectList.getSickMedicList(),medicHandler,size,gameObjectList);
+            sickMedicHandler.transformationToMedicOrDying(map,gameObjectList.getMedicList(),gameObjectList.getSickMedicList(),medicHandler,size);
 //
 //            System.out.println(" ");
 //            System.out.println(" ");
 //            System.out.println("Leczenie lub usuwanie chorego medyka       TURA NR:" +(i+1) + "    TYLE CHPRYCH MEDYKOW: " + gameObjectList.getSickMedicList().size() + "    TYLE MEDYKOW:" + gameObjectList.getMedicList().size());
 //            Area.MapDisplay(map, size);
 //
-            sickHandler.transformationToHealthy(map, gameObjectList.getHealthyList(), gameObjectList.getSickList(),gameObjectList);
+            sickHandler.transformationToHealthy(map, gameObjectList.getHealthyList(), gameObjectList.getSickList());
 //
 //            System.out.println(" ");
 //            System.out.println(" ");
 //            System.out.println("Leczenie                             TURA NR:"+(i+1)+"   TYLE SICK: " +gameObjectList.getSickList().size()+ "    TYLE HEALTHY: " + gameObjectList.getHealthyList().size());
 
-            sickHandler.virusKillSick(map,gameObjectList.getSickList(), gameObjectList);
+            sickHandler.virusKillSick(map,gameObjectList.getSickList());
 
 
             System.out.println("");
             System.out.println("KONIEC TURY:"+(i+1)+" SICK: "+ gameObjectList.getSickList().size()+" HEALTHY:"+gameObjectList.getHealthyList().size()+" MEDIC:"+gameObjectList.getMedicList().size()+" SICKMEDIC: "+ gameObjectList.getSickMedicList().size());
             Area.MapDisplay(map, size);
+
+            sentence = ("Tura nr " + (i+1) + "\nWyzdrowiało tyle chorych: " + Healthy.healthyToFile + "\nZachorowało tyle zdrowych: " + Sick.sickToFile + "\nWyleczyło się tyle Lekarzy z choroby: " + Medic.medicToFile + "\nTyle Medyków zachorowało: " + SickMedic.sickMedicToFile + "\nUmarło tyle chorych: " + Sick.deathSickToFile + "\nUmarło tyle zarażonych lekarzy: " + SickMedic.deathSickMedicToFile + "\nIlość chorych: " + gameObjectList.getSickList().size() + "\nIlość zdrowych: " + gameObjectList.getHealthyList().size() + "\nIlość Medyków: " + gameObjectList.getMedicList().size() + "\nIlość Chorych Medyków: " + gameObjectList.getSickMedicList().size() +"\n\n");
+            fileHandler.programDataFileWriter(sentence,fileInformations);
 
             gameObjectList.regeneration(gameObjectList);
             gameObjectList.virusSpreadingRegeneration(gameObjectList);

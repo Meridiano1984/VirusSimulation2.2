@@ -18,14 +18,15 @@ public class MedicHandler extends InteractionHandler{
     public GameObject interaction(){return null;}
 
 
-    public void transformationToSickMedic(Area[][] map, Virus virus, LinkedList<Medic> medicList, LinkedList<SickMedic> sickMedicList,GameObjectList gameObjectList){
+    public void transformationToSickMedic(Area[][] map, Virus virus, LinkedList<Medic> medicList, LinkedList<SickMedic> sickMedicList){
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (map[i][j].getField().getGameObjectReference() instanceof Medic) {
                     if(isSickNearby(map, i, j) >= 3){
                         Medic medic = (Medic) map[i][j].getField().getGameObjectReference();
-                        deleteMedic(medic,  medicList, i, j, map,gameObjectList);
-                        addNewSickMedic(virus, sickMedicList, i, j, map,gameObjectList);
+                        deleteMedic(medic,  medicList, i, j, map);
+                        addNewSickMedic(virus, sickMedicList, i, j, map);
+
                     }
                 }
             }
@@ -49,8 +50,8 @@ public class MedicHandler extends InteractionHandler{
 
 
     // USUWANIE MEDYKA
-    private LinkedList<Medic> deleteMedic(Medic medic, LinkedList<Medic> medicList, int x, int y, Area[][] map,GameObjectList gameObjectList){
-        medicList = gameObjectList.killMedic(medicList, medic);
+    private LinkedList<Medic> deleteMedic(Medic medic, LinkedList<Medic> medicList, int x, int y, Area[][] map){
+        medicList = medic.killMedic(medicList, medic);
         if(map[x][y].getField().getGameObjectReference() != null){
             map[x][y].getField().setGameObjectReference(null);
         }else{
@@ -62,14 +63,14 @@ public class MedicHandler extends InteractionHandler{
 
 
     // DODAWANIE CHOREGO MEDYKA
-    private LinkedList<SickMedic> addNewSickMedic(Virus virus, LinkedList<SickMedic> sickMedicList, int x, int y, Area[][] map,GameObjectList gameObjectList){
+    private LinkedList<SickMedic> addNewSickMedic(Virus virus, LinkedList<SickMedic> sickMedicList, int x, int y, Area[][] map){
 
         SickMedic sickMedic = new SickMedic(virus,0);
         sickMedicList.add(sickMedic);
-
  //       sickMedicList = sickMedic.addSickMedic(sickMedicList);
         if(map[x][y].getField().getGameObjectReference() == null){
             map[x][y].getField().setGameObjectReference(sickMedic);
+            SickMedic.sickMedicToFile++;
         }else {
             System.out.println("coś jest nie tak w zarazaniu medyka (dodawanie chorego medyka)");
         }

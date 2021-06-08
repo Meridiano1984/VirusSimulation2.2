@@ -1,9 +1,8 @@
 package com.company;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.util.Formatter;
+import java.util.Scanner;
 
 public class FileHandler {
     public void programDataFileSave(String patch,int numberOfProgramSetUp ){
@@ -41,5 +40,20 @@ public class FileHandler {
             System.out.println("Odczyt z pliku w sciezce: "+patch+" nie udał sie");
             return -1;
         }
+    }
+
+    public void programDataFileWriter (String sentence, FileInformations fileInformation){
+        try{
+            FileWriter fw = new FileWriter(fileInformation.getSimulationDataPatch(), true);
+            fw.write(sentence);
+            fw.close();
+
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
+
+
+
     }
 }

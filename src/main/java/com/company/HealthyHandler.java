@@ -27,6 +27,7 @@ public class HealthyHandler extends InteractionHandler {
                         Healthy healthy = (Healthy) map[i][j].getField().getGameObjectReference();
                         deleteHealthy(healthy , healthyList, i, j, map, gameObjectList);
                         addNewSick(virus, sickList, i, j, map);
+
                     }
                 }
             }
@@ -71,6 +72,7 @@ public class HealthyHandler extends InteractionHandler {
         sickList.add(sick);
         if(map[x][y].getField().getGameObjectReference() == null){
             map[x][y].getField().setGameObjectReference(sick);
+            Sick.sickToFile++;
         }else {
             System.out.println("coś jest nie tak w zarazaniu zdrowego (dodawanie chorego)");
         }

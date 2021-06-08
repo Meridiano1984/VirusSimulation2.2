@@ -28,17 +28,18 @@ public class SickMedicHandler extends InteractionHandler{
     }
 
 
-    public Area[][] transformationToMedicOrDying(Area[][] map, LinkedList<Medic> medicList, LinkedList<SickMedic> sickMedicList, MedicHandler medicHandler, int size,GameObjectList gameObjectList){
+    public Area[][] transformationToMedicOrDying(Area[][] map, LinkedList<Medic> medicList, LinkedList<SickMedic> sickMedicList, MedicHandler medicHandler, int size){
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
 
                 if (map[i][j].getField().getGameObjectReference() instanceof SickMedic && ((SickMedic) map[i][j].getField().getGameObjectReference()).getNumberOfIteration()>=4 ) {
                     SickMedic sickMedic = (SickMedic)map[i][j].getField().getGameObjectReference();
                     if(medicHandler.isSickNearby(map, i, j) >= 3){
-                        deleteSickMedic( (SickMedic) map[i][j].getField().getGameObjectReference(),  sickMedicList, i, j, map,gameObjectList);
+                        deleteSickMedic( (SickMedic) map[i][j].getField().getGameObjectReference(),  sickMedicList, i, j, map);
+                        SickMedic.deathSickMedicToFile++;
                     }
                     else{
-                        transformationToMedic(sickMedic, medicList, sickMedicList, i, j, map,gameObjectList);
+                        transformationToMedic(sickMedic, medicList, sickMedicList, i, j, map);
                     }
                 }
             }
@@ -47,8 +48,8 @@ public class SickMedicHandler extends InteractionHandler{
     }
 
 
-    private LinkedList<Medic> transformationToMedic(SickMedic sickMedic, LinkedList<Medic> medicList, LinkedList<SickMedic> sickMedicList, int x, int y, Area[][] map, GameObjectList gameObjectList){
-        deleteSickMedic(sickMedic, sickMedicList, x, y, map, gameObjectList);
+    private LinkedList<Medic> transformationToMedic(SickMedic sickMedic, LinkedList<Medic> medicList, LinkedList<SickMedic> sickMedicList, int x, int y, Area[][] map){
+        deleteSickMedic(sickMedic, sickMedicList, x, y, map);
         addNewMedic(medicList, x, y, map);
         Medic.setNumberOfMedics(Medic.getNumberOfMedics()+1);
 
@@ -56,8 +57,8 @@ public class SickMedicHandler extends InteractionHandler{
     }
 
 
-    private LinkedList<SickMedic> deleteSickMedic(SickMedic sickMedic, LinkedList<SickMedic> sickMedicList, int x, int y, Area[][] map,GameObjectList gameObjectList){
-        sickMedicList = gameObjectList.killSickMedic(sickMedicList, sickMedic, gameObjectList);
+    private LinkedList<SickMedic> deleteSickMedic(SickMedic sickMedic, LinkedList<SickMedic> sickMedicList, int x, int y, Area[][] map){
+        sickMedicList = sickMedic.killSickMedic(sickMedicList, sickMedic);
         if(map[x][y].getField().getGameObjectReference() != null){
             map[x][y].getField().setGameObjectReference(null);
         }else{
@@ -73,6 +74,7 @@ public class SickMedicHandler extends InteractionHandler{
         medicList.add(medic);
         if(map[x][y].getField().getGameObjectReference() == null){
             map[x][y].getField().setGameObjectReference(medic);
+            Medic.medicToFile++;
         }else {
             System.out.println("coś jest nie tak w uzdrowieniu medyka (dodawanie medyka)");
         }

@@ -8,6 +8,8 @@ public class Sick implements GameObject {
     private Virus virus;
     private boolean isMoved;
     private boolean isVirusSpread;
+    public static int sickToFile =0;
+    public static int deathSickToFile = 0;
 
     public Sick(Virus virus, boolean isMoved, boolean isVirusSpread) {
         this.virus = virus;

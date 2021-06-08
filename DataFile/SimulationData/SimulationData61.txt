@@ -1,40 +1,40 @@
 Tura nr 1
-Wyzdrowiało tyle chorych: 0
-Zachorowało tyle zdrowych: 6
+Wyzdrowiało tyle chorych: 10
+Zachorowało tyle zdrowych: 9
 Wyleczyło się tyle Lekarzy z choroby: 0
-Tyle Medyków zachorowało: 1
-Ilość chorych: 5
-Ilość zdrowych: 19
-Ilość Medyków: 11
-Ilość Chorych Medyków: 13
+Tyle Medyków zachorowało: 3
+Ilość chorych: 10
+Ilość zdrowych: 13
+Ilość Medyków: 9
+Ilość Chorych Medyków: 15
 
 Tura nr 2
-Wyzdrowiało tyle chorych: 0
-Zachorowało tyle zdrowych: 2
+Wyzdrowiało tyle chorych: 5
+Zachorowało tyle zdrowych: 4
 Wyleczyło się tyle Lekarzy z choroby: 0
 Tyle Medyków zachorowało: 0
-Ilość chorych: 0
-Ilość zdrowych: 24
-Ilość Medyków: 11
-Ilość Chorych Medyków: 13
+Ilość chorych: 9
+Ilość zdrowych: 14
+Ilość Medyków: 9
+Ilość Chorych Medyków: 15
 
 Tura nr 3
-Wyzdrowiało tyle chorych: 0
-Zachorowało tyle zdrowych: 0
+Wyzdrowiało tyle chorych: 9
+Zachorowało tyle zdrowych: 6
 Wyleczyło się tyle Lekarzy z choroby: 0
 Tyle Medyków zachorowało: 0
-Ilość chorych: 0
-Ilość zdrowych: 24
-Ilość Medyków: 11
-Ilość Chorych Medyków: 13
+Ilość chorych: 6
+Ilość zdrowych: 17
+Ilość Medyków: 9
+Ilość Chorych Medyków: 15
 
 Tura nr 4
-Wyzdrowiało tyle chorych: 0
+Wyzdrowiało tyle chorych: 6
 Zachorowało tyle zdrowych: 0
-Wyleczyło się tyle Lekarzy z choroby: 0
+Wyleczyło się tyle Lekarzy z choroby: 15
 Tyle Medyków zachorowało: 0
 Ilość chorych: 0
-Ilość zdrowych: 24
+Ilość zdrowych: 23
 Ilość Medyków: 24
 Ilość Chorych Medyków: 0
 
@@ -44,7 +44,7 @@ Zachorowało tyle zdrowych: 0
 Wyleczyło się tyle Lekarzy z choroby: 0
 Tyle Medyków zachorowało: 0
 Ilość chorych: 0
-Ilość zdrowych: 24
+Ilość zdrowych: 23
 Ilość Medyków: 24
 Ilość Chorych Medyków: 0
 
@@ -54,7 +54,7 @@ Zachorowało tyle zdrowych: 0
 Wyleczyło się tyle Lekarzy z choroby: 0
 Tyle Medyków zachorowało: 0
 Ilość chorych: 0
-Ilość zdrowych: 24
+Ilość zdrowych: 23
 Ilość Medyków: 24
 Ilość Chorych Medyków: 0
 
@@ -64,7 +64,7 @@ Zachorowało tyle zdrowych: 0
 Wyleczyło się tyle Lekarzy z choroby: 0
 Tyle Medyków zachorowało: 0
 Ilość chorych: 0
-Ilość zdrowych: 24
+Ilość zdrowych: 23
 Ilość Medyków: 24
 Ilość Chorych Medyków: 0
 
@@ -74,7 +74,7 @@ Zachorowało tyle zdrowych: 0
 Wyleczyło się tyle Lekarzy z choroby: 0
 Tyle Medyków zachorowało: 0
 Ilość chorych: 0
-Ilość zdrowych: 24
+Ilość zdrowych: 23
 Ilość Medyków: 24
 Ilość Chorych Medyków: 0
 
@@ -84,7 +84,7 @@ Zachorowało tyle zdrowych: 0
 Wyleczyło się tyle Lekarzy z choroby: 0
 Tyle Medyków zachorowało: 0
 Ilość chorych: 0
-Ilość zdrowych: 24
+Ilość zdrowych: 23
 Ilość Medyków: 24
 Ilość Chorych Medyków: 0
 
@@ -94,7 +94,7 @@ Zachorowało tyle zdrowych: 0
 Wyleczyło się tyle Lekarzy z choroby: 0
 Tyle Medyków zachorowało: 0
 Ilość chorych: 0
-Ilość zdrowych: 24
+Ilość zdrowych: 23
 Ilość Medyków: 24
 Ilość Chorych Medyków: 0
 
