@@ -34,6 +34,8 @@ com/company/ISickCreator.java
  com.company.ISickCreator
 com/company/Area.java
  com.company.Area
+com/company/Window.java
+ com.company.Window
 com/company/HealthyHandler.java
  com.company.HealthyHandler
 com/company/InteractionHandler.java

@@ -67,10 +67,11 @@ public class MoveHandler extends InteractionHandler {
     public Area[][] twoFieldHealthyMoveHandler (Area[][] map, int size){
 //
 //        int t=0;
-//        int k=0;
+        int k=0;
         for(int i = 0; i<size; i++) {
             for (int j = 0; j < size; j++) {
 
+                k=0;
                 if (map[i][j].getField().getGameObjectReference()!= null  &&  map[i][j].getField().getGameObjectReference() instanceof Healthy && ((Healthy) map[i][j].getField().getGameObjectReference()).isMoved()==false) {
 //                    t++;
                     int positionX = map[i][j].getPositionX();
@@ -110,7 +111,7 @@ public class MoveHandler extends InteractionHandler {
 
 
                     do {
-//                        k=0;
+                      if(k>=24){break;}
                         do {
                             randomField = random.nextInt(48);
                             if (randomField % 2 == 0 && randomField != 0) {
@@ -132,11 +133,13 @@ public class MoveHandler extends InteractionHandler {
                                 newPositionY = tab[randomField];
                             }
 //
-//                            k++;
+                            k++;
+                            if(k>=24){break;}
 //                            System.out.println("PETLA WYKONALA SIE: " + k + " a randomField: " + randomField);
 //                            System.out.println("Pozycja obiektu nr: " + t + " X: " + positionX + " Y: "+positionY);
 //                            System.out.println("Pozycja po zamianie   X: "+ newPositionX+ " Y: "+ newPositionY);
                         } while (!(newPositionX >= 0 && newPositionX < size && newPositionY >= 0 && newPositionY < size));
+                        if(k>=24){break;}
 //                        System.out.println("Pozycja po zamianie   X: "+ newPositionX+ " Y: "+ newPositionY);
 //                        if(map[newPositionX][newPositionY].getField().getGameObjectReference()==null){
 //                            System.out.println("                                        WOLNE");
@@ -145,6 +148,7 @@ public class MoveHandler extends InteractionHandler {
 //                        }
 
                     }while(map[newPositionX][newPositionY].getField().getGameObjectReference()!=null);
+                    if(k>=24){break;}
 
 
                     GameObject gameObjectReference = map[positionX][positionY].getField().getGameObjectReference();
@@ -172,6 +176,7 @@ public class MoveHandler extends InteractionHandler {
         for(int i = 0; i<size; i++) {
             for (int j = 0; j < size; j++) {
 
+                k=0;
                 if (map[i][j].getField().getGameObjectReference()!= null  &&  map[i][j].getField().getGameObjectReference() instanceof Medic && ((Medic) map[i][j].getField().getGameObjectReference()).isMoved()==false) {
                     t++;
                     int positionX = map[i][j].getPositionX();
@@ -211,7 +216,7 @@ public class MoveHandler extends InteractionHandler {
 
 
                     do {
-                        k=0;
+                        if(k>=24){break;}
                         do {
                             randomField = random.nextInt(48);
                             if (randomField % 2 == 0 && randomField != 0) {
@@ -234,10 +239,12 @@ public class MoveHandler extends InteractionHandler {
                             }
 //
                             k++;
+                            if(k>=24){break;}
 //                            System.out.println("PETLA WYKONALA SIE: " + k + " a randomField: " + randomField);
 //                            System.out.println("Pozycja obiektu nr: " + t + " X: " + positionX + " Y: "+positionY);
 //                            System.out.println("Pozycja po zamianie   X: "+ newPositionX+ " Y: "+ newPositionY);
                         } while (!(newPositionX >= 0 && newPositionX < size && newPositionY >= 0 && newPositionY < size));
+                        if(k>=24){break;}
                         //System.out.println("Pozycja po zamianie   X: "+ newPositionX+ " Y: "+ newPositionY);
 //                        if(map[newPositionX][newPositionY].getField().getGameObjectReference()==null){
 //                            System.out.println("                                        WOLNE");
@@ -246,6 +253,7 @@ public class MoveHandler extends InteractionHandler {
 //                        }
 
                     }while(map[newPositionX][newPositionY].getField().getGameObjectReference()!=null);
+                    if(k>=24){break;}
 
 
                     GameObject gameObjectReference = map[positionX][positionY].getField().getGameObjectReference();
@@ -273,6 +281,7 @@ public class MoveHandler extends InteractionHandler {
         for(int i = 0; i<size; i++) {
             for (int j = 0; j < size; j++) {
 
+                k=0;
                 if (map[i][j].getField().getGameObjectReference()!= null  &&  map[i][j].getField().getGameObjectReference() instanceof Sick && ((Sick) map[i][j].getField().getGameObjectReference()).isMoved()==false) {
                     t++;
                     int positionX = map[i][j].getPositionX();
@@ -296,7 +305,7 @@ public class MoveHandler extends InteractionHandler {
 
 
                     do {
-                        k=0;
+                        if(k>=8){break;}
                         do {
                             randomField = random.nextInt(16);
                             if (randomField % 2 == 0 && randomField != 0) {
@@ -319,10 +328,12 @@ public class MoveHandler extends InteractionHandler {
                             }
 //
                             k++;
+                            if(k>=8){break;}
 //                            System.out.println("PETLA WYKONALA SIE: " + k + " a randomField: " + randomField);
 //                            System.out.println("Pozycja obiektu nr: " + t + " X: " + positionX + " Y: "+positionY);
 //                            System.out.println("Pozycja po zamianie   X: "+ newPositionX+ " Y: "+ newPositionY);
                         } while (!(newPositionX >= 0 && newPositionX < size && newPositionY >= 0 && newPositionY < size));
+                        if(k>=8){break;}
                         //System.out.println("Pozycja po zamianie   X: "+ newPositionX+ " Y: "+ newPositionY);
 //                        if(map[newPositionX][newPositionY].getField().getGameObjectReference()==null){
 //                            System.out.println("                                        WOLNE");
@@ -331,6 +342,7 @@ public class MoveHandler extends InteractionHandler {
 //                        }
 
                     }while(map[newPositionX][newPositionY].getField().getGameObjectReference()!=null);
+                    if(k>=8){break;}
 
 
                     GameObject gameObjectReference = map[positionX][positionY].getField().getGameObjectReference();

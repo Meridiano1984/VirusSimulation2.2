@@ -22,9 +22,6 @@ public class SickMedicHandler extends InteractionHandler{
 
         for (SickMedic sickMedic: sickMedicList){
             sickMedic.numberOfIteration++;
-            if (sickMedic.numberOfIteration==4){
-                transformationToMedicOrDying(map, medicList, sickMedicList, medicHandler, size);
-            }
         }
         return map;
     }
