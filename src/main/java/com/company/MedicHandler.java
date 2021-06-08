@@ -21,7 +21,7 @@ public class MedicHandler extends InteractionHandler{
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (map[i][j].getField().getGameObjectReference() instanceof Medic) {
-                    if(isSickNearby(map, i, j) >= 5){
+                    if(isSickNearby(map, i, j) >= 3){
                         Medic medic = (Medic) map[i][j].getField().getGameObjectReference();
                         deleteMedic(medic,  medicList, i, j, map);
                         addNewSickMedic(virus, sickMedicList, i, j, map);

@@ -11,18 +11,7 @@ public interface IMedicCreator {
 
         List<Medic> medicList =new LinkedList<>();
 
-//        Medic[] medicTab = new Medic[numberOfPeople];
-//
-//        for(int i = 0; i< medicTab.length;i++ ){
-//            medicTab[i] = new Medic(false);
-//
-//        }
-//
-//
-//        for (int i =0; i<medicTab.length; i++) {
-//            medicList.add(medicTab[i]);
-//        }
-//        System.out.println("a za pomiaca funkcji size wynosi:" + medicList.size());
+
         for (int i=0; i<numberOfPeople; i++){
             medicList.add(new Medic(false));
         }

@@ -28,7 +28,7 @@ public class SickMedic implements GameObject {
     }
 
 
-    public LinkedList<SickMedic> killSickMedic(LinkedList<SickMedic> sickMedicList, SickMedic sickMedicToKill){
+    protected LinkedList<SickMedic> killSickMedic(LinkedList<SickMedic> sickMedicList, SickMedic sickMedicToKill){
 
         for(int i=0;i<sickMedicList.size();i++){
 
@@ -39,5 +39,5 @@ public class SickMedic implements GameObject {
         }
         return sickMedicList;
     }
-    
+
 }

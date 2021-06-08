@@ -34,7 +34,7 @@ public class SickMedicHandler extends InteractionHandler{
 
                 if (map[i][j].getField().getGameObjectReference() instanceof SickMedic) {
                     SickMedic sickMedic = (SickMedic)map[i][j].getField().getGameObjectReference();
-                    if(medicHandler.isSickNearby(map, i, j) >= 5){
+                    if(medicHandler.isSickNearby(map, i, j) >= 3){
                         deleteSickMedic( (SickMedic) map[i][j].getField().getGameObjectReference(),  sickMedicList, i, j, map);
                     }
                     else{
@@ -47,7 +47,7 @@ public class SickMedicHandler extends InteractionHandler{
     }
 
 
-    public LinkedList<Medic> transformationToMedic(SickMedic sickMedic, LinkedList<Medic> medicList, LinkedList<SickMedic> sickMedicList, int x, int y, Area[][] map){
+    private LinkedList<Medic> transformationToMedic(SickMedic sickMedic, LinkedList<Medic> medicList, LinkedList<SickMedic> sickMedicList, int x, int y, Area[][] map){
         deleteSickMedic(sickMedic, sickMedicList, x, y, map);
         addNewMedic(medicList, x, y, map);
         Medic.setNumberOfMedics(Medic.getNumberOfMedics()+1);

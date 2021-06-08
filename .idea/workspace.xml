@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a1a6cba-d396-408c-92b7-85c75245d985" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Healthy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Healthy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/HealthyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/HealthyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Medic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Medic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IHealthyCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/IHealthyCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IMedicCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/IMedicCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IObstacleCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/IObstacleCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/ISickCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/ISickCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/ISickMedicCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/ISickMedicCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MedicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/MedicHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Sick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Sick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickMedic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/SickMedic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickMedicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/SickMedicHandler.java" afterDir="false" />
     </list>

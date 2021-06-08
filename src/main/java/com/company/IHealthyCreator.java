@@ -10,16 +10,7 @@ public interface IHealthyCreator {
         numberOfPeople = numberOfPeople/5;
         System.out.println("Healthy w momencie tworzenia listy:" + numberOfPeople);
 
-//        Healthy[] healthyTab = new Healthy[numberOfPeople];
-//
-//        for(int i = 0; i< healthyTab.length;i++ ){
-//            healthyTab[i] = new Healthy(false);
-//        }
-//
-//        for (int i =0; i<healthyTab.length; i++) {
-//            healthyList.add(healthyTab[i]);
-//        }
-//         System.out.println("a za pomiaca funkcji size wynosi:" + healthyList.size());
+
         for (int i=0; i<numberOfPeople; i++){
             healthyList.add(new Healthy(false));
         }

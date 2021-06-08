@@ -19,26 +19,22 @@ public class Area {
     public int getPositionX() {
         return positionX;
     }
-
     public void setPositionX(int positionX) {
         this.positionX = positionX;
     }
-
     public int getPositionY() {
         return positionY;
     }
-
     public void setPositionY(int positionY) {
         this.positionY = positionY;
     }
-
     public Field getField() {
         return field;
     }
-
     public void setField(Field field) {
         this.field = field;
     }
+
 
     public static Area[][] mapGenerator(int x, int y) {
 

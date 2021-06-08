@@ -11,16 +11,6 @@ public interface IObstacleCreator {
         System.out.println("Obstacle w momencie tworzenia listy :" + numberOfPeople);
 
 
-//        Obstacle[] obstacleTab = new Obstacle[numberOfPeople];
-//
-//        for(int i = 0; i< obstacleTab.length;i++ ){
-//            obstacleTab[i] = new Obstacle();
-//        }
-//
-//        for (int i =0; i<obstacleTab.length; i++) {
-//            obstacleList.add(obstacleTab[i]);
-//        }
-//        System.out.println("a za pomiaca funkcji size wynosi:" + obstacleList.size());
         for (int i=0; i<numberOfPeople; i++){
             obstacleList.add(new Obstacle());
         }

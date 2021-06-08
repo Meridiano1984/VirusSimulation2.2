@@ -14,15 +14,6 @@ public interface ISickMedicCreator {
         SickMedic[] sickMedicTab = new SickMedic[numberOfPeople];
 
 
-//        for(int i = 0; i< sickMedicTab.length;i++ ){
-//            sickMedicTab[i] = new SickMedic(virus);
-//        }
-//
-//        for (int i =0; i<sickMedicTab.length; i++) {
-//            sickMedicList.add(sickMedicTab[i]);
-//        }
-//        System.out.println("a za pomiaca funkcji size wynosi:" + sickMedicList.size());
-
         for (int i=0; i<numberOfPeople; i++){
             sickMedicList.add(new SickMedic(virus));
         }
