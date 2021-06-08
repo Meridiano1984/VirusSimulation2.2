@@ -31,7 +31,6 @@ public class Sick implements GameObject {
     }
 
 
-
     protected LinkedList<Sick> killSick(LinkedList<Sick> sickList, Sick sickToKill){
 
         for(int i=0;i<sickList.size();i++){
@@ -44,12 +43,6 @@ public class Sick implements GameObject {
         return sickList;
     }
 
-
-    protected LinkedList<Sick> addSick(LinkedList<Sick> sickList){
-
-        sickList.add(new Sick(virus, true));
-        return sickList;
-    }
 
 }
 

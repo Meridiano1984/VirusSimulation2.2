@@ -68,7 +68,7 @@ public class HealthyHandler extends InteractionHandler {
     private LinkedList<Sick> addNewSick(Virus virus, LinkedList<Sick> sickList, int x, int y, Area[][] map){
 
         Sick sick = new Sick(virus, false);
-        sickList = sick.addSick(sickList);
+        sickList.add(sick);
         if(map[x][y].getField().getGameObjectReference() == null){
             map[x][y].getField().setGameObjectReference(sick);
         }else {

@@ -29,10 +29,4 @@ public class Healthy implements GameObject {
         return healthyList;
     }
 
-
-    protected LinkedList<Healthy> addHealthy(LinkedList<Healthy> healthyList){
-
-        healthyList.add(new Healthy(true));
-        return healthyList;
-    }
 }

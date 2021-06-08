@@ -3,38 +3,21 @@ package com.company;
 import java.util.LinkedList;
 
 public class Medic implements GameObject {
-    public static int numberOfMedics = 0;
+    private static int numberOfMedics = 0;
     private boolean isMoved;
 
     public Medic(boolean isMoved) {
         this.isMoved = isMoved;
         numberOfMedics++;
-
     }
 
-    public static int getNumberOfMedics() {
-        return numberOfMedics;
-    }
-
-    public static void setNumberOfMedics(int numberOfMedics) {
-        Medic.numberOfMedics = numberOfMedics;
-    }
-
-    public boolean isMoved() {
-        return isMoved;
-    }
-
-    public void setMoved(boolean moved) {
-        isMoved = moved;
-    }
-
-    public Healthy healSick (Area[][] map){
-        return null;
-    }
+    public static int getNumberOfMedics() { return numberOfMedics; }
+    public static void setNumberOfMedics(int numberOfMedics) { Medic.numberOfMedics = numberOfMedics; }
+    public boolean isMoved() { return isMoved; }
+    public void setMoved(boolean moved) { isMoved = moved; }
 
 
-
-    public LinkedList<Medic> killMedic(LinkedList<Medic> medicList, Medic medicToKill){
+    protected LinkedList<Medic> killMedic(LinkedList<Medic> medicList, Medic medicToKill){
 
         for(Medic medic: medicList){
 
