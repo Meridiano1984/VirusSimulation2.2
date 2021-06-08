@@ -5,11 +5,13 @@ import java.util.LinkedList;
 public class SickMedicHandler extends InteractionHandler{
     private Area[][] map;
     private GameObject reference;
+    private int size;
 
 
-    public SickMedicHandler(Area[][] map, GameObject reference) {
+    public SickMedicHandler(Area[][] map, GameObject reference, int size) {
         this.map = map;
         this.reference = reference;
+        this.size = size;
     }
 
     @Override
@@ -76,6 +78,7 @@ public class SickMedicHandler extends InteractionHandler{
         }else {
             System.out.println("coś jest nie tak w uzdrowieniu medyka (dodawanie medyka)");
         }
+        Medic.setNumberOfMedics(Medic.getNumberOfMedics()+1);
         return medicList;
     }
 

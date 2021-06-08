@@ -19,12 +19,11 @@ public class Medic implements GameObject {
 
     protected LinkedList<Medic> killMedic(LinkedList<Medic> medicList, Medic medicToKill){
 
-        for(Medic medic: medicList){
+        for(int i=0;i<medicList.size();i++){
 
-            if(medic==medicToKill){
+            if(medicList.get(i)==medicToKill){
                 medicList.remove(medicToKill);
             }
-
         }
         return medicList;
     }

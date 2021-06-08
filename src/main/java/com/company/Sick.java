@@ -38,7 +38,6 @@ public class Sick implements GameObject {
             if(sickList.get(i)==sickToKill){
                 sickList.remove(sickToKill);
             }
-
         }
         return sickList;
     }

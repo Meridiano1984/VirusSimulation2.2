@@ -8,9 +8,10 @@ public class MedicHandler extends InteractionHandler{
     private GameObject reference;
     private int size;
 
-    public MedicHandler(Area[][] map, GameObject reference) {
+    public MedicHandler(Area[][] map, GameObject reference, int size) {
         this.map = map;
         this.reference = reference;
+        this.size = size;
     }
 
     @Override

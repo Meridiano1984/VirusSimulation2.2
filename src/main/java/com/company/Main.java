@@ -17,7 +17,7 @@ public class Main {
         //int deathRateSick =4;                                          //     TUTAJ ZNANAJDUJE SIE ATRYBUTY KLASY WIRUS TRZBE BEDZIE JE POBIERAC OD CZLOWIEKA
         //int deathRateSickMedic=5;
         Virus virus = new Virus(1, 2);        //     INICJALIZACJA KLASY WIRUS
-        int numberOfObjects =20;                                           //     WYBIERAMY LICZBE OBIEKTOW
+        int numberOfObjects =60;                                           //     WYBIERAMY LICZBE OBIEKTOW
         int iteration;
         GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfObjects), IObstacleCreator.createObstacle(numberOfObjects), IMedicCreator.createMedic(numberOfObjects), ISickCreator.createSick(numberOfObjects, virus), ISickMedicCreator.createSickMedic(numberOfObjects, virus), virus);              // INICJALIZUJEMY LISTE OBIEKATMI, ARGUMENTY DO TEJ FUNKCJI SA DOSTARCZNAE PRZEZ FUNKCJE KTORE TWORZA LISTY OBIEKTOW
 //        LinkedList<GameObject> bigList = gameObjectList.bigListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList(), gameObjectList.getSickMedicList());                                                                                                                                                 // utworzeni listy zawierajace wszystkie gameobjecty z wyjatkiem obstacle sluży do przmeiszczania obiektow
@@ -26,20 +26,21 @@ public class Main {
         //Area[][] map = new Map[50][50];
         Area[][] map = Area.mapGenerator(size, size);                                  //TWORZENIE MAPY O WYMIARACH 50 NA 50 ZA POMOCA SPECJALNEJ FUNKCJI
 
-//        MoveHandler moveTour = new MoveHandler(map, bigList);                        // TWORZENIE OBIEKTU WYWOŁUJACEGO CHODZENIE
+//        MoveHandler moveTour = new MoveHandler(map, bigList);
+// TWORZENIE OBIEKTU WYWOLUJACEGO CHODZENIE
 
 
         SickHandler sickHandler = new SickHandler(map, null, size);                  //TWORZENIE OBIEKTOW HENDLEROW NA KTORYCH RZECZ BEDA WYWOLYWANE FUNKCJE
         HealthyHandler healthyHandler = new HealthyHandler(map, null, size);
-        SickMedicHandler sickMedicHandler = new SickMedicHandler(map, null);
-        MedicHandler medicHandler = new MedicHandler(map, null);
+        SickMedicHandler sickMedicHandler = new SickMedicHandler(map, null, size);
+        MedicHandler medicHandler = new MedicHandler(map, null, size);
         MoveHandler moveHandler = new MoveHandler(map, null);
 
 
         map = map[0][0].mapGameObjectInitialization(map, gameObjectList.getObstacleList(), gameObjectList.getHealthyList(), gameObjectList.getSickList(), gameObjectList.getMedicList(), gameObjectList.getSickMedicList(), size);       //INICJALIZOWANIE MAPY OBIEKATMI Z LIST
 
 
-        //PRZYKŁADOWE PARE TUR PRZEMIESZCZANIA//
+        //PRZYKLADOWE PARE TUR PRZEMIESZCZANIA//
         Area.MapDisplay(map, size);
         for (int i = 0; i < 10; i++) {
             map = moveHandler.twoFieldHealthyMoveHandler(map, size);
