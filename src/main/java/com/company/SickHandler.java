@@ -106,6 +106,7 @@ public class SickHandler extends InteractionHandler {
 //                    System.out.println("DEATHRATEOFSIC: "+((Sick) map[i][j].getField().getGameObjectReference()).getVirus().getDeathRateOfSick());
                     Sick sick =(Sick)map[i][j].getField().getGameObjectReference();
                     deleteSick(sick, sickList,i,j,map );
+                    Sick.deathSickToFile++;
                 }
             }
         }

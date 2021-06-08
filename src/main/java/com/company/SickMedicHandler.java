@@ -36,7 +36,7 @@ public class SickMedicHandler extends InteractionHandler{
                     SickMedic sickMedic = (SickMedic)map[i][j].getField().getGameObjectReference();
                     if(medicHandler.isSickNearby(map, i, j) >= 3){
                         deleteSickMedic( (SickMedic) map[i][j].getField().getGameObjectReference(),  sickMedicList, i, j, map);
-
+                        SickMedic.deathSickMedicToFile++;
                     }
                     else{
                         transformationToMedic(sickMedic, medicList, sickMedicList, i, j, map);

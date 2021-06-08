@@ -9,6 +9,7 @@ public class SickMedic implements GameObject {
     private final int treatmentDuration = 3;
     private int numberOfIteration=0;
     public static int sickMedicToFile =0;
+    public static int deathSickMedicToFile = 0;
 
     public SickMedic(Virus virus,int numberOfIteration) {
         this.virus = virus;
