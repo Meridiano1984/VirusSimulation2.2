@@ -38,16 +38,23 @@ public class Sick implements GameObject {
     }
 
 
-    protected LinkedList<Sick> killSick(LinkedList<Sick> sickList, Sick sickToKill){
-
-        for(int i=0;i<sickList.size();i++){
-
-            if(sickList.get(i)==sickToKill){
-                sickList.remove(sickToKill);
-            }
-        }
-        return sickList;
-    }
+//    protected LinkedList<Sick> killSick(LinkedList<Sick> sickList, Sick sickToKill){
+//
+//        int rememberI =-1;
+//        for(int i=0;i<sickList.size();i++){
+//
+//            if(sickList.get(i)==sickToKill){
+//                rememberI=i;
+//            }
+//        }
+//        if(rememberI!=-1) {
+//            sickList.remove(sickList.get(rememberI));
+//        }
+//
+//
+//
+//        return sickList;
+//    }
 
 
 }

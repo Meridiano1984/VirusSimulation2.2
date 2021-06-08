@@ -20,12 +20,18 @@ public class Healthy implements GameObject {
 
     protected LinkedList<Healthy> killHealthy(LinkedList <Healthy> healthyList, Healthy healthyToKill){
 
+
+        int rememberI =-1;
         for(int i=0;i<healthyList.size();i++){
 
             if(healthyList.get(i)==healthyToKill){
-                healthyList.remove(healthyToKill);
+                rememberI=i;
             }
         }
+        if(rememberI!=-1) {
+            healthyList.remove(healthyList.get(rememberI));
+        }
+
         return healthyList;
     }
 

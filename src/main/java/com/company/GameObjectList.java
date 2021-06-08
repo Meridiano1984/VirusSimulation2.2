@@ -158,4 +158,71 @@ public class GameObjectList {
         }
         System.out.println("Liczba obiektow to: " + i + "+ liczba obstacle");
     }
+
+    protected LinkedList<Sick> killSick(LinkedList<Sick> sickList, Sick sickToKill){
+
+        int rememberI =-1;
+        for(int i=0;i<sickList.size();i++){
+
+            if(sickList.get(i)==sickToKill){
+                rememberI=i;
+            }
+        }
+        if(rememberI!=-1) {
+            sickList.remove(sickList.get(rememberI));
+        }
+
+
+
+        return sickList;
+    }
+
+    protected LinkedList<Medic> killMedic(LinkedList<Medic> medicList, Medic medicToKill){
+        int rememberI =-1;
+        for(int i=0;i<medicList.size();i++){
+
+            if(medicList.get(i)==medicToKill){
+                rememberI=i;
+            }
+        }
+        if(rememberI!=-1) {
+            medicList.remove(medicList.get(rememberI));
+        }
+        return medicList;
+    }
+
+    protected LinkedList<SickMedic> killSickMedic(LinkedList<SickMedic> sickMedicList, SickMedic sickMedicToKill , GameObjectList gameObjectList){
+
+        int rememberI =-1;
+        for(int i=0;i<sickMedicList.size();i++){
+
+            if(sickMedicList.get(i)==sickMedicToKill){
+                rememberI=i;
+            }
+        }
+        if(rememberI!=-1) {
+            sickMedicList.remove(sickMedicList.get(rememberI));
+        }
+
+        return sickMedicList;
+    }
+
+    protected LinkedList<Healthy> killHealthy(LinkedList <Healthy> healthyList, Healthy healthyToKill){
+
+
+        int rememberI =-1;
+        for(int i=0;i<healthyList.size();i++){
+
+            if(healthyList.get(i)==healthyToKill){
+                rememberI=i;
+            }
+        }
+        if(rememberI!=-1) {
+            healthyList.remove(healthyList.get(rememberI));
+        }
+
+        return healthyList;
+    }
+
+
 }

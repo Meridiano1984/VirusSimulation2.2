@@ -53,18 +53,18 @@ public class Window extends JPanel {
 
     }
 
-
-    public Window(){
-        JFrame frame = new JFrame("Simulation");
-        frame.setSize(800,600);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mapGameObjectInitialization(map,
-                gameObjectList.getObstacleList(),
-                gameObjectList.getHealthyList(),
-                gameObjectList.getSickList(),
-                gameObjectList.getMedicList(), gameObjectList.getSickMedicList(),
-                size);
-        frame.setVisible(true);
-    }
+//
+//    public Window(){
+//        JFrame frame = new JFrame("Simulation");
+//        frame.setSize(800,600);
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        mapGameObjectInitialization(map,
+//                gameObjectList.getObstacleList(),
+//                gameObjectList.getHealthyList(),
+//                gameObjectList.getSickList(),
+//                gameObjectList.getMedicList(), gameObjectList.getSickMedicList(),
+//                size);
+//        frame.setVisible(true);
+//    }
 
 }

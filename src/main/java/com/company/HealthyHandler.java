@@ -19,13 +19,13 @@ public class HealthyHandler extends InteractionHandler {
     }
 
 
-    public void transformationToSick(Area[][] map, Virus virus, LinkedList<Healthy> healthyList, LinkedList<Sick> sickList){
+    public void transformationToSick(Area[][] map, Virus virus, LinkedList<Healthy> healthyList, LinkedList<Sick> sickList, GameObjectList gameObjectList){
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (map[i][j].getField().getGameObjectReference() instanceof Healthy) {
                     if(isSickNearby(map, i, j)){
                         Healthy healthy = (Healthy) map[i][j].getField().getGameObjectReference();
-                        deleteHealthy(healthy , healthyList, i, j, map);
+                        deleteHealthy(healthy , healthyList, i, j, map, gameObjectList);
                         addNewSick(virus, sickList, i, j, map);
                     }
                 }
@@ -51,8 +51,8 @@ public class HealthyHandler extends InteractionHandler {
 
 
     // USUWANIE ZDROWEGO
-    private LinkedList<Healthy> deleteHealthy(Healthy healthy, LinkedList<Healthy> healthyList, int x, int y, Area[][] map){
-        healthyList = healthy.killHealthy(healthyList, healthy);
+    private LinkedList<Healthy> deleteHealthy(Healthy healthy, LinkedList<Healthy> healthyList, int x, int y, Area[][] map, GameObjectList gameObjectList){
+        healthyList = gameObjectList.killHealthy(healthyList, healthy);
         if(map[x][y].getField().getGameObjectReference() != null){
             map[x][y].getField().setGameObjectReference(null);
         }else{
