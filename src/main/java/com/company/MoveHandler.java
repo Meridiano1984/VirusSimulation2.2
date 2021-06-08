@@ -16,15 +16,12 @@ public class MoveHandler extends InteractionHandler {
     public Area[][] getMap() {
         return map;
     }
-
     public void setMap(Area[][] map) {
         this.map = map;
     }
-
     public LinkedList<GameObject> getReferenceList() {
         return referenceList;
     }
-
     public void setReferenceList(LinkedList<GameObject> referenceList) {
         this.referenceList = referenceList;
     }
@@ -53,7 +50,7 @@ public class MoveHandler extends InteractionHandler {
 
             map[positionX][positionY].getField().setGameObjectReference(gameObject);
 
-            if (gameObject instanceof Sick) {
+            if (gameObject instanceof Healthy) {
                 System.out.println("HEALTHY X: " + positionX + " Y: " + positionY);
             } else if (gameObject instanceof Sick) {
                 System.out.println("SICK X: " + positionX + " Y: " + positionY);

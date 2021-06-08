@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a1a6cba-d396-408c-92b7-85c75245d985" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataFile/ProgramData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DataFile/ProgramData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/Medic.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/Medic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/MedicHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/MedicHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/Sick.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/Sick.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/SickMedicHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/SickMedicHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Medic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Medic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MedicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/MedicHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Sick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Sick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickMedicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/SickMedicHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/MoveHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
