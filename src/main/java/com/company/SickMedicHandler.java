@@ -36,6 +36,7 @@ public class SickMedicHandler extends InteractionHandler{
                     SickMedic sickMedic = (SickMedic)map[i][j].getField().getGameObjectReference();
                     if(medicHandler.isSickNearby(map, i, j) >= 3){
                         deleteSickMedic( (SickMedic) map[i][j].getField().getGameObjectReference(),  sickMedicList, i, j, map);
+
                     }
                     else{
                         transformationToMedic(sickMedic, medicList, sickMedicList, i, j, map);
@@ -73,6 +74,7 @@ public class SickMedicHandler extends InteractionHandler{
         medicList.add(medic);
         if(map[x][y].getField().getGameObjectReference() == null){
             map[x][y].getField().setGameObjectReference(medic);
+            Medic.medicToFile++;
         }else {
             System.out.println("coś jest nie tak w uzdrowieniu medyka (dodawanie medyka)");
         }

@@ -26,6 +26,7 @@ public class MedicHandler extends InteractionHandler{
                         Medic medic = (Medic) map[i][j].getField().getGameObjectReference();
                         deleteMedic(medic,  medicList, i, j, map);
                         addNewSickMedic(virus, sickMedicList, i, j, map);
+
                     }
                 }
             }
@@ -69,6 +70,7 @@ public class MedicHandler extends InteractionHandler{
  //       sickMedicList = sickMedic.addSickMedic(sickMedicList);
         if(map[x][y].getField().getGameObjectReference() == null){
             map[x][y].getField().setGameObjectReference(sickMedic);
+            SickMedic.sickMedicToFile++;
         }else {
             System.out.println("coś jest nie tak w zarazaniu medyka (dodawanie chorego medyka)");
         }

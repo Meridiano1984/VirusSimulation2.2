@@ -6,6 +6,7 @@ public class Healthy implements GameObject {
 
     private static int numberOfHealthy = 0;
     private boolean isMoved;
+    public static int healthyToFile =0;
 
     public Healthy(boolean isMoved) {
         this.isMoved = isMoved;

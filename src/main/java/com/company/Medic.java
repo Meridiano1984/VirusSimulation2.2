@@ -5,6 +5,7 @@ import java.util.LinkedList;
 public class Medic implements GameObject {
     private static int numberOfMedics = 0;
     private boolean isMoved;
+    public static int medicToFile =0;
 
     public Medic(boolean isMoved) {
         this.isMoved = isMoved;

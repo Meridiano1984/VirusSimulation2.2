@@ -8,12 +8,13 @@ public class Main {
 
         FileInformations fileInformations;
         FileCreator fileCreator =new FileCreator();
+        FileHandler fileHandler = new FileHandler();
 
         fileInformations = fileCreator.fileInitialization();
+        String sentence = new String();
 
 
-
-        int size = 100;                                                       //     ZMIENNA UMOZLIWIAJACA ZMINE ROZMIARU TABLICY
+        int size = 10;                                                       //     ZMIENNA UMOZLIWIAJACA ZMINE ROZMIARU TABLICY
         int numberOfHealthy = 0*5;
         int numberOfSick = 40*5;
         int numberOfMedic = 0*5;
@@ -49,6 +50,11 @@ public class Main {
         //PRZYKLADOWE PARE TUR PRZEMIESZCZANIA//
         Area.MapDisplay(map, size);
         for (int i = 0; i < 10; i++) {
+            Medic.medicToFile = 0;
+            SickMedic.sickMedicToFile = 0;
+            Healthy.healthyToFile = 0;
+            Sick.sickToFile = 0;
+
             map = moveHandler.twoFieldHealthyMoveHandler(map, size);
             map = moveHandler.twoFieldMedicMoveHandler(map, size);
             map = moveHandler.oneFieldSickMoveHandler(map, size);
@@ -94,6 +100,9 @@ public class Main {
             System.out.println("");
             System.out.println("KONIEC TURY:"+(i+1)+" SICK: "+ gameObjectList.getSickList().size()+" HEALTHY:"+gameObjectList.getHealthyList().size()+" MEDIC:"+gameObjectList.getMedicList().size()+" SICKMEDIC: "+ gameObjectList.getSickMedicList().size());
             Area.MapDisplay(map, size);
+
+            sentence = ("Tura nr " + (i+1) + "\nWyzdrowiało tyle chorych: " + Healthy.healthyToFile + "\nZachorowało tyle zdrowych: " + Sick.sickToFile + "\nWyleczyło się tyle Lekarzy z choroby: " + Medic.medicToFile + "\nTyle Medyków zachorowało: " + SickMedic.sickMedicToFile + "\nIlość chorych: " + gameObjectList.getSickList().size() + "\nIlość zdrowych: " + gameObjectList.getHealthyList().size() + "\nIlość Medyków: " + gameObjectList.getMedicList().size() + "\nIlość Chorych Medyków: " + gameObjectList.getSickMedicList().size() +"\n\n");
+            fileHandler.programDataFileWriter(sentence,fileInformations);
 
             gameObjectList.regeneration(gameObjectList);
             gameObjectList.virusSpreadingRegeneration(gameObjectList);
