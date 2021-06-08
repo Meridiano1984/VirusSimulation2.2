@@ -9,7 +9,7 @@ public class Window extends JPanel {
 
     int size = 100;
     Area[][] map = Area.mapGenerator(size, size);
-    Virus virus = new Virus(1, 2);
+    Virus virus = new Virus(1);
     int numberOfObjects =60;
     GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfObjects), IObstacleCreator.createObstacle(numberOfObjects), IMedicCreator.createMedic(numberOfObjects), ISickCreator.createSick(numberOfObjects, virus), ISickMedicCreator.createSickMedic(numberOfObjects, virus), virus);
     LinkedList<GameObject> movingList = gameObjectList.movingListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList());

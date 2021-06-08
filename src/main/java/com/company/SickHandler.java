@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.LinkedList;
+import java.util.Random;
 
 public class SickHandler extends InteractionHandler {
     private Area[][] map;
@@ -85,5 +86,29 @@ public class SickHandler extends InteractionHandler {
         Healthy.setNumberOfHealthy(Healthy.getNumberOfHealthy()+1);
         return healthyList;
     }
+
+
+    public void virusKillSick (Area[][] map, LinkedList<Sick> sickList) {
+
+        Random random =new Random();
+        int bound;
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                bound =random.nextInt(100)+1;
+//                System.out.println("BOUND PRZED WARUNKIEM:"+bound);
+
+                if (map[i][j].getField().getGameObjectReference() instanceof Sick && ((Sick) map[i][j].getField().getGameObjectReference()).getVirus().getDeathRateOfSick()>=bound ) {
+
+//                    System.out.println("BOUND PO WARUNKU:"+bound);
+//                    System.out.println("DEATHRATEOFSIC: "+((Sick) map[i][j].getField().getGameObjectReference()).getVirus().getDeathRateOfSick());
+                    Sick sick =(Sick)map[i][j].getField().getGameObjectReference();
+                    deleteSick(sick, sickList,i,j,map );
+                }
+            }
+        }
+    }
+
+
 
 }

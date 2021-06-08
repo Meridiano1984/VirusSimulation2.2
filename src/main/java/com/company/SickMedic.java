@@ -48,4 +48,7 @@ public class SickMedic implements GameObject {
         return sickMedicList;
     }
 
+
+
+
 }
