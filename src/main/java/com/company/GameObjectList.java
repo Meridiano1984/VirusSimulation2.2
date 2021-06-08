@@ -191,7 +191,7 @@ public class GameObjectList {
         return medicList;
     }
 
-    protected LinkedList<SickMedic> killSickMedic(LinkedList<SickMedic> sickMedicList, SickMedic sickMedicToKill , GameObjectList gameObjectList){
+    protected LinkedList<SickMedic> killSickMedic(LinkedList<SickMedic> sickMedicList, SickMedic sickMedicToKill){
 
         int rememberI =-1;
         for(int i=0;i<sickMedicList.size();i++){
@@ -222,6 +222,19 @@ public class GameObjectList {
         }
 
         return healthyList;
+    }
+
+    private LinkedList<Medic> addNewMedic( LinkedList<Medic> medicList, int x, int y, Area[][] map){
+        Medic medic = new Medic(false);
+        medicList.add(medic);
+        if(map[x][y].getField().getGameObjectReference() == null){
+            map[x][y].getField().setGameObjectReference(medic);
+            Medic.medicToFile++;
+        }else {
+            System.out.println("coś jest nie tak w uzdrowieniu medyka (dodawanie medyka)");
+        }
+        Medic.setNumberOfMedics(Medic.getNumberOfMedics()+1);
+        return medicList;
     }
 
 

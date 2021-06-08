@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a1a6cba-d396-408c-92b7-85c75245d985" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataFile/ProgramData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DataFile/ProgramData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/GameObjectList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/GameObjectList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Sick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Sick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MedicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/MedicHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/SickHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickMedic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/SickMedic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickMedicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/SickMedicHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

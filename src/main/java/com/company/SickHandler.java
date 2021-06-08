@@ -20,13 +20,13 @@ public class SickHandler extends InteractionHandler {
     }
 
 
-    public void transformationToHealthy(Area[][] map, LinkedList<Healthy> healthyList, LinkedList<Sick> sickList){
+    public void transformationToHealthy(Area[][] map, LinkedList<Healthy> healthyList, LinkedList<Sick> sickList, GameObjectList gameObjectList){
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (map[i][j].getField().getGameObjectReference() instanceof Sick) {
                     if(isMedicNearby(map, i, j)){
                         Sick sick = (Sick) map[i][j].getField().getGameObjectReference();
-                        deleteSick(sick , sickList, i, j, map);
+                        deleteSick(sick , sickList, i, j, map,gameObjectList );
                         addNewHealthy(healthyList, i, j, map);
 
                     }
@@ -62,8 +62,8 @@ public class SickHandler extends InteractionHandler {
 
 
     //USUWANIE CHOREGO
-    private LinkedList<Sick> deleteSick(Sick sick, LinkedList<Sick> sickList, int x, int y, Area[][] map){
-        sickList = sick.killSick(sickList, sick);
+    private LinkedList<Sick> deleteSick(Sick sick, LinkedList<Sick> sickList, int x, int y, Area[][] map, GameObjectList gameObjectList){
+        sickList = gameObjectList.killSick(sickList, sick);
         if(map[x][y].getField().getGameObjectReference() != null){
             map[x][y].getField().setGameObjectReference(null);
         }else{
@@ -90,7 +90,7 @@ public class SickHandler extends InteractionHandler {
     }
 
 
-    public void virusKillSick (Area[][] map, LinkedList<Sick> sickList) {
+    public void virusKillSick (Area[][] map, LinkedList<Sick> sickList,GameObjectList gameObjectList) {
 
         Random random =new Random();
         int bound;
@@ -105,7 +105,7 @@ public class SickHandler extends InteractionHandler {
 //                    System.out.println("BOUND PO WARUNKU:"+bound);
 //                    System.out.println("DEATHRATEOFSIC: "+((Sick) map[i][j].getField().getGameObjectReference()).getVirus().getDeathRateOfSick());
                     Sick sick =(Sick)map[i][j].getField().getGameObjectReference();
-                    deleteSick(sick, sickList,i,j,map );
+                    deleteSick(sick, sickList,i,j,map, gameObjectList);
                     Sick.deathSickToFile++;
                 }
             }
