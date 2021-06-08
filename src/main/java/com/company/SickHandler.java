@@ -5,7 +5,7 @@ import java.util.LinkedList;
 public class SickHandler extends InteractionHandler {
     private Area[][] map;
     private GameObject reference;
-    public int size;
+    private int size;
 
     public SickHandler(Area[][] map, GameObject reference, int size) {
         this.map = map;
@@ -19,12 +19,11 @@ public class SickHandler extends InteractionHandler {
     }
 
 
-    // JAK MEDYK W POBLIZU = TRUE TO ZAMIANA ZDROWEGO NA ZDROWEGO
     public void transformationToHealthy(Area[][] map, LinkedList<Healthy> healthyList, LinkedList<Sick> sickList){
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (map[i][j].getField().getGameObjectReference() instanceof Sick) {
-                    if(isSickMedic(map, i, j)){
+                    if(isMedicNearby(map, i, j)){
                         Sick sick = (Sick) map[i][j].getField().getGameObjectReference();
                         deleteSick(sick , sickList, i, j, map);
                         addNewHealthy(healthyList, i, j, map);
@@ -36,7 +35,7 @@ public class SickHandler extends InteractionHandler {
 
 
 
-    public boolean isSickMedic(Area[][] map, int a, int b){
+    protected boolean isMedicNearby(Area[][] map, int a, int b){
         for(int i = a-1; i<= a+1; i++){
             for(int j = b-1; j <= b+1; j++){
                 if(i >= 0 && j >= 0 && i < size && j< size){
@@ -46,8 +45,8 @@ public class SickHandler extends InteractionHandler {
                 }
             }
         }
-        for(int i= a-2; i<= a+1; i++){
-            for(int j = b-1; j <= b+1; j++){
+        for(int i= a-2; i<= a+2; i++){
+            for(int j = b-2; j <= b+2; j++){
                 if(i >=0 && j >= 0 && i<size && j<size){
                     if(map[i][j].getField().getGameObjectReference() instanceof Medic){
                         return true;
@@ -68,7 +67,7 @@ public class SickHandler extends InteractionHandler {
         }else{
             System.out.println("coś jest nie tak w uzdrawniau chorego (usuwanie chorego)");
         }
-        Sick.numberOfSick--;
+        Sick.setNumberOfSick(Sick.getNumberOfSick()-1);
         return sickList;
     }
 
@@ -83,7 +82,7 @@ public class SickHandler extends InteractionHandler {
         }else {
             System.out.println("coś jest nie tak w uzdrawnaniu chorego (dodawanie zdrowego)");
         }
-        Healthy.numberOfHealthy++;
+        Healthy.setNumberOfHealthy(Healthy.getNumberOfHealthy()+1);
         return healthyList;
     }
 

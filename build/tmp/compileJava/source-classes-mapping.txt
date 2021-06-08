@@ -14,36 +14,36 @@ com/company/Virus.java
  com.company.Virus
 com/company/FileInformations.java
  com.company.FileInformations
-com/company/ISickCreator.java
- com.company.ISickCreator
+com/company/SickMedicHandler.java
+ com.company.SickMedicHandler
 com/company/IObstacleCreator.java
  com.company.IObstacleCreator
 com/company/SickMedic.java
  com.company.SickMedic
-com/company/MedicHandler.java
- com.company.MedicHandler
-com/company/ISickMedicCreator.java
- com.company.ISickMedicCreator
-com/company/Main.java
- com.company.Main
-com/company/Sick.java
- com.company.Sick
-com/company/SickMedicHandler.java
- com.company.SickMedicHandler
 com/company/InteractionHandler.java
  com.company.InteractionHandler
+com/company/ISickMedicCreator.java
+ com.company.ISickMedicCreator
 com/company/HealthyHandler.java
  com.company.HealthyHandler
+com/company/ISickCreator.java
+ com.company.ISickCreator
 com/company/MoveHandler.java
  com.company.MoveHandler
 com/company/SickHandler.java
  com.company.SickHandler
+com/company/MedicHandler.java
+ com.company.MedicHandler
 com/company/Area.java
  com.company.Area
 com/company/GameObjectList.java
  com.company.GameObjectList
 com/company/Medic.java
  com.company.Medic
+com/company/Main.java
+ com.company.Main
+com/company/Sick.java
+ com.company.Sick
 com/company/IHealthyCreator.java
  com.company.IHealthyCreator
 com/company/Healthy.java

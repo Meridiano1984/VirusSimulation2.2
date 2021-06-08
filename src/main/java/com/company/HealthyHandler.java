@@ -5,7 +5,7 @@ import java.util.LinkedList;
 public class HealthyHandler extends InteractionHandler {
     private Area[][] map;
     private GameObject reference;
-    public int size;
+    private int size;
 
     public HealthyHandler(Area[][] map, GameObject reference, int size) {
         this.map = map;
@@ -19,7 +19,6 @@ public class HealthyHandler extends InteractionHandler {
     }
 
 
-    // JAK CHORY W POBLIZU = TRUE TO ZAMIANA ZDROWEGO NA CHOREGO
     public void transformationToSick(Area[][] map, Virus virus, LinkedList<Healthy> healthyList, LinkedList<Sick> sickList){
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
@@ -36,7 +35,7 @@ public class HealthyHandler extends InteractionHandler {
 
 
 
-    public boolean isSickNearby(Area[][] map, int a, int b){
+    private boolean isSickNearby(Area[][] map, int a, int b){
         for(int i = a-1; i<= a+1; i++){
             for(int j = b-1; j <= b+1 ; j++){
                 if(i >= 0 && j >= 0 && i < size && j< size){
@@ -59,7 +58,7 @@ public class HealthyHandler extends InteractionHandler {
         }else{
             System.out.println("coś jest nie tak w zarazaniu zdrowego (usuwanie zrdowego)");
         }
-        Healthy.numberOfHealthy--;
+        Healthy.setNumberOfHealthy(Healthy.getNumberOfHealthy()-1);
         return healthyList;
     }
 
@@ -75,7 +74,7 @@ public class HealthyHandler extends InteractionHandler {
         }else {
             System.out.println("coś jest nie tak w zarazaniu zdrowego (dodawanie chorego)");
         }
-        Sick.numberOfSick++;
+        Sick.setNumberOfSick(Sick.getNumberOfSick()+1);
         return sickList;
     }
 }
