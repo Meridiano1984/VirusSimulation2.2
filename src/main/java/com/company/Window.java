@@ -5,6 +5,8 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+import static com.company.Area.mapGameObjectInitialization;
+
 public class Window extends JPanel {
 
     int size = 100;
@@ -14,8 +16,7 @@ public class Window extends JPanel {
     GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfObjects), IObstacleCreator.createObstacle(numberOfObjects), IMedicCreator.createMedic(numberOfObjects), ISickCreator.createSick(numberOfObjects, virus), ISickMedicCreator.createSickMedic(numberOfObjects, virus), virus);
     LinkedList<GameObject> movingList = gameObjectList.movingListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList());
 
-
-//    map = map[0][0].mapGameObjectInitialization(map, gameObjectList.getObstacleList(), gameObjectList.getHealthyList(), gameObjectList.getSickList(), gameObjectList.getMedicList(), gameObjectList.getSickMedicList(), size);       //INICJALIZOWANIE MAPY OBIEKATMI Z LIST
+    //INICJALIZOWANIE MAPY OBIEKATMI Z LIST
 
 
 
@@ -43,7 +44,8 @@ public class Window extends JPanel {
 
     public static void main(String[] arg){
         Window window = new Window();
-    }
+
+}
 
 
     public void paint(Graphics g){
@@ -56,7 +58,12 @@ public class Window extends JPanel {
         JFrame frame = new JFrame("Simulation");
         frame.setSize(800,600);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        mapGameObjectInitialization(map,
+                gameObjectList.getObstacleList(),
+                gameObjectList.getHealthyList(),
+                gameObjectList.getSickList(),
+                gameObjectList.getMedicList(), gameObjectList.getSickMedicList(),
+                size);
         frame.setVisible(true);
     }
 

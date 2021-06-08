@@ -28,7 +28,7 @@ public class Main {
 //        GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfHealthy), IObstacleCreator.createObstacle(numberOfObstacle), IMedicCreator.createMedic(numberOfMedic), ISickCreator.createSick(numberOfSick, virus), ISickMedicCreator.createSickMedic(numberOfSickMedic, virus), virus);
 //        LinkedList<GameObject> bigList = gameObjectList.bigListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList(), gameObjectList.getSickMedicList());                                                                                                                                                 // utworzeni listy zawierajace wszystkie gameobjecty z wyjatkiem obstacle sluży do przmeiszczania obiektow
         LinkedList<GameObject> movingList = gameObjectList.movingListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList());
-
+        Window window = new Window();
         //Area[][] map = new Map[50][50];
         Area[][] map = Area.mapGenerator(size, size);                                  //TWORZENIE MAPY O WYMIARACH 50 NA 50 ZA POMOCA SPECJALNEJ FUNKCJI
 
