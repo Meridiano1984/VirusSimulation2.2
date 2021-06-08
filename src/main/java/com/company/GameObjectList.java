@@ -140,6 +140,16 @@ public class GameObjectList {
         return gameObjectList;
     }
 
+    public GameObjectList virusSpreadingRegeneration (GameObjectList gameObjectList){
+
+        for(Sick sick: gameObjectList.getSickList()){
+            sick.setVirusSpread(false);
+        }
+
+        return gameObjectList;
+    }
+
+
     public static void numberOfObjects(LinkedList<GameObject> bigList) {
         int i =0;
 

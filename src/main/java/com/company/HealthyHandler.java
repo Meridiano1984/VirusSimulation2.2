@@ -39,7 +39,7 @@ public class HealthyHandler extends InteractionHandler {
         for(int i = a-1; i<= a+1; i++){
             for(int j = b-1; j <= b+1 ; j++){
                 if(i >= 0 && j >= 0 && i < size && j< size){
-                    if(map[i][j].getField().getGameObjectReference() instanceof Sick){
+                    if(map[i][j].getField().getGameObjectReference() instanceof Sick && ((Sick) map[i][j].getField().getGameObjectReference()).isVirusSpread()==false){
                         return true;
                     }
                 }
@@ -67,7 +67,7 @@ public class HealthyHandler extends InteractionHandler {
     // DODAWANIE CHOREGO
     private LinkedList<Sick> addNewSick(Virus virus, LinkedList<Sick> sickList, int x, int y, Area[][] map){
 
-        Sick sick = new Sick(virus, false);
+        Sick sick = new Sick(virus, false,true);
         sickList.add(sick);
         if(map[x][y].getField().getGameObjectReference() == null){
             map[x][y].getField().setGameObjectReference(sick);

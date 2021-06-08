@@ -12,7 +12,7 @@ public interface ISickCreator {
 
 
         for (int i=0; i<numberOfPeople; i++){
-            sickList.add(new Sick(virus, false));
+            sickList.add(new Sick(virus, false,false));
         }
 
         return (LinkedList<Sick>) sickList;

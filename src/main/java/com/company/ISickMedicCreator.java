@@ -15,7 +15,7 @@ public interface ISickMedicCreator {
 
 
         for (int i=0; i<numberOfPeople; i++){
-            sickMedicList.add(new SickMedic(virus));
+            sickMedicList.add(new SickMedic(virus,0));
         }
         return (LinkedList<SickMedic>) sickMedicList;
     };

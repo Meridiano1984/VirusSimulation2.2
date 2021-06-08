@@ -64,7 +64,7 @@ public class MedicHandler extends InteractionHandler{
     // DODAWANIE CHOREGO MEDYKA
     private LinkedList<SickMedic> addNewSickMedic(Virus virus, LinkedList<SickMedic> sickMedicList, int x, int y, Area[][] map){
 
-        SickMedic sickMedic = new SickMedic(virus);
+        SickMedic sickMedic = new SickMedic(virus,0);
         sickMedicList.add(sickMedic);
  //       sickMedicList = sickMedic.addSickMedic(sickMedicList);
         if(map[x][y].getField().getGameObjectReference() == null){

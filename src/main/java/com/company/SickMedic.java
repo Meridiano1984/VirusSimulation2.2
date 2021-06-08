@@ -7,10 +7,11 @@ public class SickMedic implements GameObject {
     private static int numberOfSickMedic = 0;
     private Virus virus;
     private final int treatmentDuration = 3;
-    public int numberOfIteration=0;
+    private int numberOfIteration=0;
 
-    public SickMedic(Virus virus) {
+    public SickMedic(Virus virus,int numberOfIteration) {
         this.virus = virus;
+        this.numberOfIteration=numberOfIteration;
         numberOfSickMedic++;
     }
 
@@ -27,6 +28,13 @@ public class SickMedic implements GameObject {
         this.virus = virus;
     }
 
+    public int getNumberOfIteration() {
+        return numberOfIteration;
+    }
+
+    public void setNumberOfIteration(int numberOfIteration) {
+        this.numberOfIteration = numberOfIteration;
+    }
 
     protected LinkedList<SickMedic> killSickMedic(LinkedList<SickMedic> sickMedicList, SickMedic sickMedicToKill){
 

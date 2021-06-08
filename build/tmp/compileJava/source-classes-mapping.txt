@@ -1,41 +1,41 @@
-com/company/Obstacle.java
- com.company.Obstacle
-com/company/FileCreator.java
- com.company.FileCreator
-com/company/FileInformations.java
- com.company.FileInformations
-com/company/FileHandler.java
- com.company.FileHandler
 com/company/Field.java
  com.company.Field
-com/company/GameObject.java
- com.company.GameObject
-com/company/Virus.java
- com.company.Virus
-com/company/Medic.java
- com.company.Medic
+com/company/FileCreator.java
+ com.company.FileCreator
 com/company/IMedicCreator.java
  com.company.IMedicCreator
-com/company/IObstacleCreator.java
- com.company.IObstacleCreator
-com/company/Sick.java
- com.company.Sick
+com/company/FileHandler.java
+ com.company.FileHandler
 com/company/IHealthyCreator.java
  com.company.IHealthyCreator
 com/company/Healthy.java
  com.company.Healthy
-com/company/SickMedic.java
- com.company.SickMedic
-com/company/ISickMedicCreator.java
- com.company.ISickMedicCreator
-com/company/GameObjectList.java
- com.company.GameObjectList
+com/company/Virus.java
+ com.company.Virus
+com/company/FileInformations.java
+ com.company.FileInformations
+com/company/GameObject.java
+ com.company.GameObject
+com/company/IObstacleCreator.java
+ com.company.IObstacleCreator
+com/company/Sick.java
+ com.company.Sick
+com/company/Obstacle.java
+ com.company.Obstacle
 com/company/ISickCreator.java
  com.company.ISickCreator
+com/company/Medic.java
+ com.company.Medic
 com/company/Area.java
  com.company.Area
+com/company/ISickMedicCreator.java
+ com.company.ISickMedicCreator
 com/company/Window.java
  com.company.Window
+com/company/SickMedic.java
+ com.company.SickMedic
+com/company/GameObjectList.java
+ com.company.GameObjectList
 com/company/HealthyHandler.java
  com.company.HealthyHandler
 com/company/InteractionHandler.java

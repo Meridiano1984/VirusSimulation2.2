@@ -18,12 +18,13 @@ public class SickMedicHandler extends InteractionHandler{
     protected GameObject interaction(){return null;}
 
 
-    public Area[][] checkingNumberOfIteration(Area [][] map, LinkedList<SickMedic> sickMedicList, LinkedList<Medic> medicList, MedicHandler medicHandler, int size){
+    public LinkedList<SickMedic> checkingNumberOfIteration(Area [][] map, LinkedList<SickMedic> sickMedicList, LinkedList<Medic> medicList, MedicHandler medicHandler, int size){
 
         for (SickMedic sickMedic: sickMedicList){
-            sickMedic.numberOfIteration++;
+            sickMedic.setNumberOfIteration(sickMedic.getNumberOfIteration()+1);
         }
-        return map;
+
+        return sickMedicList;
     }
 
 
@@ -31,7 +32,7 @@ public class SickMedicHandler extends InteractionHandler{
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
 
-                if (map[i][j].getField().getGameObjectReference() instanceof SickMedic) {
+                if (map[i][j].getField().getGameObjectReference() instanceof SickMedic && ((SickMedic) map[i][j].getField().getGameObjectReference()).getNumberOfIteration()>=4 ) {
                     SickMedic sickMedic = (SickMedic)map[i][j].getField().getGameObjectReference();
                     if(medicHandler.isSickNearby(map, i, j) >= 3){
                         deleteSickMedic( (SickMedic) map[i][j].getField().getGameObjectReference(),  sickMedicList, i, j, map);

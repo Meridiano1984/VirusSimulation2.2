@@ -7,10 +7,12 @@ public class Sick implements GameObject {
     private static int numberOfSick = 0;
     private Virus virus;
     private boolean isMoved;
+    private boolean isVirusSpread;
 
-    public Sick(Virus virus, boolean isMoved) {
+    public Sick(Virus virus, boolean isMoved, boolean isVirusSpread) {
         this.virus = virus;
         this.isMoved = isMoved;
+        this.isVirusSpread = isVirusSpread;
         numberOfSick++;
     }
 
@@ -18,7 +20,12 @@ public class Sick implements GameObject {
     public static void setNumberOfSick(int numberOfSick) { Sick.numberOfSick = numberOfSick; }
     public boolean isMoved() { return isMoved; }
     public void setMoved(boolean moved) { isMoved = moved; }
-
+    public boolean isVirusSpread() {
+        return isVirusSpread;
+    }
+    public void setVirusSpread(boolean virusSpread) {
+        isVirusSpread = virusSpread;
+    }
 
     public void deathOfSick (Sick sick){}
 
