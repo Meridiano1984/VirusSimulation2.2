@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a1a6cba-d396-408c-92b7-85c75245d985" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/GameObjectList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/GameObjectList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MedicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/MedicHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/SickHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickMedicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/SickMedicHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Window">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="VirusSimulation2.2.main" />
