@@ -1,0 +1,1652 @@
+Tura nr 0
+Ilość osób: 200
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+Ilość przeszkód: 100
+
+Tura nr 1
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 2
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 3
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 4
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 5
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 6
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 7
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 8
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 9
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 10
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 11
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 12
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 13
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 14
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 15
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 16
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 17
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 18
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 19
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 20
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 21
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 22
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 23
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 24
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 25
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 26
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 27
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 28
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 29
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 30
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 31
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 32
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 33
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 34
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 35
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 36
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 37
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 38
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 39
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 40
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 41
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 42
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 43
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 44
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 45
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 46
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 47
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 48
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 49
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 50
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 51
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 52
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 53
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 54
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 55
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 56
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 57
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 58
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 59
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 60
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 61
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 62
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 63
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 64
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 65
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 66
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 67
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 68
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 69
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 70
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 71
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 72
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 73
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 74
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 75
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 76
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 77
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 78
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 79
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 80
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 81
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 82
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 83
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 84
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 85
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 86
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 87
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 88
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 89
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 90
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 91
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 92
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 93
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 94
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 95
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 96
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 97
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 98
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 99
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 100
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 101
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 102
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 103
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 104
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 105
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 106
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 107
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 108
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 109
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 110
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 111
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 112
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 113
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 114
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 115
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 116
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 117
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 118
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 119
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 120
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 121
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 122
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 123
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 124
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 125
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 126
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 127
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 128
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 129
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 130
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 131
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 132
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 133
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 134
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 135
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 136
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 137
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 100
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+

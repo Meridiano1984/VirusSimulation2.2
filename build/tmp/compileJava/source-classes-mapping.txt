@@ -44,9 +44,9 @@ com/company/SickHandler.java
  com.company.SickHandler
 com/company/MedicHandler.java
  com.company.MedicHandler
-com/company/SickMedicHandler.java
- com.company.SickMedicHandler
 com/company/Main.java
  com.company.Main
 com/company/Window.java
  com.company.Window
+com/company/SickMedicHandler.java
+ com.company.SickMedicHandler

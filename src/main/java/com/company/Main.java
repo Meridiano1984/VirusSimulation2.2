@@ -39,7 +39,7 @@ public class Main {
                 System.out.println("PODAJE DANE DOTYCZĄCE SYMULACJI");
                 System.out.print("ROZMIAR POLA(KWADRAT, MINIMALNY ROZMIAR TO 2): ");
                 size =scanner.nextInt();
-                if(size<2){throw new InputMismatchException();}
+                if(size<2 || size>80){throw new InputMismatchException();}
                 System.out.print("LICZBA ZDROWYCH: ");
                 numberOfHealthy = scanner.nextInt();
                 if(numberOfHealthy<0){throw new InputMismatchException();}
@@ -49,7 +49,7 @@ public class Main {
                 System.out.print("LICZBA MEDYKÓW: ");
                 numberOfMedic = scanner.nextInt();
                 if(numberOfMedic<0){throw new InputMismatchException();}
-                System.out.println("LICZBA CHORYCH MEDYKÓW(SUGEROWANA=0): ");
+                System.out.print("LICZBA CHORYCH MEDYKÓW(SUGEROWANA=0): ");
                 numberOfSickMedic = scanner.nextInt();
                 if(numberOfSickMedic<0){throw new InputMismatchException();}
                 System.out.print("LICZBA PRZESZKÓD: ");
