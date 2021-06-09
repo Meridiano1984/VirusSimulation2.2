@@ -44,19 +44,19 @@ public class Window extends JPanel implements ActionListener {
                 if (map[i][j].getField().getGameObjectReference() == null) {
                 } else if (map[i][j].getField().getGameObjectReference() instanceof Healthy) {
                     g.setColor(Color.LIGHT_GRAY);
-                    g.fillOval(i, j, 1, 1);
+                    g.fillOval(i, j, 4, 4);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof Medic) {
                     g.setColor(Color.CYAN);
-                    g.fillOval(i, j, 1, 1);
+                    g.fillOval(i, j, 4, 4);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof Sick) {
                     g.setColor(Color.RED);
-                    g.fillOval(i, j, 1, 1);
+                    g.fillOval(i, j, 4, 4);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof Obstacle) {
                     g.setColor(Color.BLACK);
-                    g.fillOval(i, j, 1, 1);
+                    g.fillOval(i, j, 4, 4);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof SickMedic) {
                     g.setColor(Color.BLUE);
-                    g.fillOval(i, j, 1, 1);
+                    g.fillOval(i, j, 4, 4);
                 }
             }
         }
@@ -89,7 +89,7 @@ public class Window extends JPanel implements ActionListener {
 
 
 
-        Timer t = new Timer(16, this);
+        Timer t = new Timer(2500, this);
         t.restart();
         frame.add(this);
         frame.setVisible(true);
