@@ -40,15 +40,18 @@ public class Main {
                 System.out.print("ROZMIAR POLA(KWADRAT, MINIMALNY ROZMIAR TO 2): ");
                 size =scanner.nextInt();
                 if(size<2){throw new InputMismatchException();}
-                System.out.print("LICZBA MEDYKÓW: ");
-                numberOfMedic = scanner.nextInt();
-                if(numberOfMedic<0){throw new InputMismatchException();}
-                System.out.print("LICZBA CHORYCH: ");
-                numberOfSick = scanner.nextInt();
-                if(numberOfSick<0){throw new InputMismatchException();}
                 System.out.print("LICZBA ZDROWYCH: ");
                 numberOfHealthy = scanner.nextInt();
                 if(numberOfHealthy<0){throw new InputMismatchException();}
+                System.out.print("LICZBA CHORYCH: ");
+                numberOfSick = scanner.nextInt();
+                if(numberOfSick<0){throw new InputMismatchException();}
+                System.out.print("LICZBA MEDYKÓW: ");
+                numberOfMedic = scanner.nextInt();
+                if(numberOfMedic<0){throw new InputMismatchException();}
+                System.out.println("LICZBA CHORYCH MEDYKÓW(SUGEROWANA=0): ");
+                numberOfSickMedic = scanner.nextInt();
+                if(numberOfSickMedic<0){throw new InputMismatchException();}
                 System.out.print("LICZBA PRZESZKÓD: ");
                 numberOfObstacle = scanner.nextInt();
                 if(numberOfObstacle<0){throw new InputMismatchException();}
