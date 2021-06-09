@@ -1,0 +1,110 @@
+Index: src/main/java/com/company/Window.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\r\n\r\nimport javax.swing.*;\r\nimport java.awt.*;\r\nimport java.awt.event.ActionEvent;\r\nimport java.awt.event.ActionListener;\r\nimport java.util.ArrayList;\r\nimport java.util.LinkedList;\r\n\r\nimport static com.company.Area.mapGameObjectInitialization;\r\n\r\npublic class Window extends JPanel implements ActionListener {\r\n\r\n    int size = 20;\r\n    Area[][] map = Area.mapGenerator(size, size);\r\n    Virus virus = new Virus(2);\r\n    int numberOfObjects =100;\r\n    int numberOfHealthy = 5*5;\r\n    int numberOfSick = 5*5;\r\n    int numberOfMedic = 5*5;\r\n    int numberOfSickMedic =5*5;\r\n    int numberOfObstacle =5*5;\r\n    GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfHealthy), IObstacleCreator.createObstacle(numberOfObstacle), IMedicCreator.createMedic(numberOfMedic), ISickCreator.createSick(numberOfSick, virus), ISickMedicCreator.createSickMedic(numberOfSickMedic, virus), virus);\r\n    LinkedList<GameObject> movingList = gameObjectList.movingListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList());\r\n\r\n\r\n    SickHandler sickHandler = new SickHandler(map, null, size);                  //TWORZENIE OBIEKTOW HENDLEROW NA KTORYCH RZECZ BEDA WYWOLYWANE FUNKCJE\r\n    HealthyHandler healthyHandler = new HealthyHandler(map, null, size);\r\n    SickMedicHandler sickMedicHandler = new SickMedicHandler(map, null, size);\r\n    MedicHandler medicHandler = new MedicHandler(map, null, size);\r\n    MoveHandler moveHandler = new MoveHandler(map, null);\r\n\r\n\r\n    public static void main(String[] arg){\r\n        Window window = new Window();\r\n    }\r\n\r\n\r\n    public void paint(Graphics g) {\r\n\r\n        super.paintComponent(g);\r\n        for (int i = 0; i < size; i++) {\r\n            for (int j = 0; j < size; j++) {\r\n                if (map[i][j].getField().getGameObjectReference() == null) {\r\n                    g.setColor(Color.LIGHT_GRAY);\r\n                    g.fill3DRect(10*i, 10*j, 10, 10, true);\r\n                } else if (map[i][j].getField().getGameObjectReference() instanceof Healthy) {\r\n                    g.setColor(Color.YELLOW);\r\n                    g.fill3DRect(10*i, 10*j, 10,10,true);\r\n                } else if (map[i][j].getField().getGameObjectReference() instanceof Medic) {\r\n                    g.setColor(Color.CYAN);\r\n                    g.fill3DRect(10*i, 10*j, 10, 10,true);\r\n                } else if (map[i][j].getField().getGameObjectReference() instanceof Sick) {\r\n                    g.setColor(Color.RED);\r\n                    g.fill3DRect(10*i, 10*j, 10, 10,true);\r\n                } else if (map[i][j].getField().getGameObjectReference() instanceof Obstacle) {\r\n                    g.setColor(Color.BLACK);\r\n                    g.fill3DRect(10*i, 10*j, 10, 10,true);\r\n                } else if (map[i][j].getField().getGameObjectReference() instanceof SickMedic) {\r\n                    g.setColor(Color.BLUE);\r\n                    g.fill3DRect(10*i, 10*j, 10, 10,true);\r\n                }\r\n            }\r\n        }\r\n        for (int i = 0; i < 10; i++) {\r\n            map = moveHandler.twoFieldHealthyMoveHandler(map, size);\r\n            map = moveHandler.twoFieldMedicMoveHandler(map, size);\r\n            map = moveHandler.oneFieldSickMoveHandler(map, size);\r\n            healthyHandler.transformationToSick(map,virus,gameObjectList.getHealthyList(),gameObjectList.getSickList(),gameObjectList);\r\n            medicHandler.transformationToSickMedic(map, virus, gameObjectList.getMedicList(), gameObjectList.getSickMedicList(),gameObjectList);\r\n            sickMedicHandler.checkingNumberOfIteration(map, gameObjectList.getSickMedicList(), gameObjectList.getMedicList(), medicHandler, size);\r\n            sickMedicHandler.transformationToMedicOrDying(map,gameObjectList.getMedicList(),gameObjectList.getSickMedicList(),medicHandler,size,gameObjectList);\r\n            sickHandler.transformationToHealthy(map, gameObjectList.getHealthyList(), gameObjectList.getSickList(),gameObjectList);\r\n            sickHandler.virusKillSick(map,gameObjectList.getSickList(),gameObjectList);\r\n        }\r\n    }\r\n\r\n\r\n\r\n    public Window(){\r\n        JFrame frame = new JFrame(\"Simulation\");\r\n        frame.setSize(800,600);\r\n        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\r\n\r\n        mapGameObjectInitialization(map,\r\n                gameObjectList.getObstacleList(),\r\n                gameObjectList.getHealthyList(),\r\n                gameObjectList.getSickList(),\r\n                gameObjectList.getMedicList(), gameObjectList.getSickMedicList(),\r\n                size);\r\n\r\n        Timer t = new Timer(16, this);\r\n        t.restart();\r\n        frame.add(this);\r\n        frame.setVisible(true);\r\n    }\r\n\r\n    @Override\r\n    public void actionPerformed(ActionEvent e) {\r\n        repaint();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/company/Window.java b/src/main/java/com/company/Window.java
+--- a/src/main/java/com/company/Window.java	(revision 1c1cf316daec609408181e0578beaefa937cafed)
++++ b/src/main/java/com/company/Window.java	(date 1623256187709)
+@@ -39,6 +39,18 @@
+     public void paint(Graphics g) {
+ 
+         super.paintComponent(g);
++        g.setColor(Color.BLACK);
++        g.setFont(new Font("serif",Font.ITALIC, 20));
++        g.drawString("Tura nr: ", 400, 20);
++        g.drawString("Ilosc zdrowych: " + gameObjectList.getHealthyList().size(), 400, 50);
++        g.drawString("Ilosc chorych: " + gameObjectList.getSickList().size(), 400, 80);
++        g.drawString("Ilosc medykow: " + gameObjectList.getMedicList().size(), 400, 110);
++        g.drawString("Ilosc chorych medykow: " + gameObjectList.getSickMedicList().size(), 400, 140);
++
++
++
++
++
+         for (int i = 0; i < size; i++) {
+             for (int j = 0; j < size; j++) {
+                 if (map[i][j].getField().getGameObjectReference() == null) {
+@@ -62,6 +74,7 @@
+                 }
+             }
+         }
++
+         for (int i = 0; i < 10; i++) {
+             map = moveHandler.twoFieldHealthyMoveHandler(map, size);
+             map = moveHandler.twoFieldMedicMoveHandler(map, size);
+@@ -78,6 +91,7 @@
+ 
+ 
+     public Window(){
++
+         JFrame frame = new JFrame("Simulation");
+         frame.setSize(800,600);
+         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+@@ -89,7 +103,7 @@
+                 gameObjectList.getMedicList(), gameObjectList.getSickMedicList(),
+                 size);
+ 
+-        Timer t = new Timer(16, this);
++        Timer t = new Timer(2000, this);
+         t.restart();
+         frame.add(this);
+         frame.setVisible(true);
+Index: .idea/.name
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>VirusSimulation2.2.iml
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.name b/.idea/.name
+--- a/.idea/.name	(revision 1c1cf316daec609408181e0578beaefa937cafed)
++++ b/.idea/.name	(date 1623253933932)
+@@ -1,1 +1,1 @@
+-VirusSimulation2.2.iml
+\ No newline at end of file
++Main.java
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"9a1a6cba-d396-408c-92b7-85c75245d985\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/com/company/GameObjectList.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/com/company/GameObjectList.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/com/company/Healthy.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/com/company/Healthy.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/com/company/HealthyHandler.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/com/company/HealthyHandler.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/com/company/Main.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/com/company/Main.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/com/company/Medic.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/com/company/Medic.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/com/company/MedicHandler.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/com/company/MedicHandler.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/com/company/Sick.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/com/company/Sick.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/com/company/SickHandler.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/com/company/SickHandler.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/com/company/SickMedicHandler.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/com/company/SickMedicHandler.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/company/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/company/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/company/Window.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/company/Window.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <task path=\"$PROJECT_DIR$\">\r\n          <activation />\r\n        </task>\r\n        <projects_view />\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1tdf5vVvllZmytbdEbhG4vMC5x6\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.Main\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.company.Main\" />\r\n      <module name=\"VirusSimulation2.2.main\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.company.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Window\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.company.Window\" />\r\n      <module name=\"VirusSimulation2.2.main\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.company.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"VirusSimulation2.2\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list />\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Window\" />\r\n        <item itemvalue=\"Gradle.VirusSimulation2.2\" />\r\n        <item itemvalue=\"Application.Main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"9a1a6cba-d396-408c-92b7-85c75245d985\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1623103709854</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1623103709854</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.IndexOutOfBoundsException\" package=\"java.lang\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 1c1cf316daec609408181e0578beaefa937cafed)
++++ b/.idea/workspace.xml	(date 1623255720686)
+@@ -72,7 +72,7 @@
+     <property name="project.structure.proportion" value="0.0" />
+     <property name="project.structure.side.proportion" value="0.0" />
+   </component>
+-  <component name="RunManager" selected="Application.Main">
++  <component name="RunManager" selected="Application.Window">
+     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+       <module name="VirusSimulation2.2.main" />
+Index: build/tmp/compileJava/source-classes-mapping.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>com/company/Field.java\r\n com.company.Field\r\ncom/company/FileCreator.java\r\n com.company.FileCreator\r\ncom/company/IMedicCreator.java\r\n com.company.IMedicCreator\r\ncom/company/FileHandler.java\r\n com.company.FileHandler\r\ncom/company/IHealthyCreator.java\r\n com.company.IHealthyCreator\r\ncom/company/Healthy.java\r\n com.company.Healthy\r\ncom/company/Virus.java\r\n com.company.Virus\r\ncom/company/FileInformations.java\r\n com.company.FileInformations\r\ncom/company/ISickCreator.java\r\n com.company.ISickCreator\r\ncom/company/IObstacleCreator.java\r\n com.company.IObstacleCreator\r\ncom/company/SickMedic.java\r\n com.company.SickMedic\r\ncom/company/GameObjectList.java\r\n com.company.GameObjectList\r\ncom/company/ISickMedicCreator.java\r\n com.company.ISickMedicCreator\r\ncom/company/Obstacle.java\r\n com.company.Obstacle\r\ncom/company/Sick.java\r\n com.company.Sick\r\ncom/company/Medic.java\r\n com.company.Medic\r\ncom/company/Area.java\r\n com.company.Area\r\ncom/company/GameObject.java\r\n com.company.GameObject\r\ncom/company/HealthyHandler.java\r\n com.company.HealthyHandler\r\ncom/company/InteractionHandler.java\r\n com.company.InteractionHandler\r\ncom/company/MoveHandler.java\r\n com.company.MoveHandler\r\ncom/company/SickHandler.java\r\n com.company.SickHandler\r\ncom/company/MedicHandler.java\r\n com.company.MedicHandler\r\ncom/company/Main.java\r\n com.company.Main\r\ncom/company/Window.java\r\n com.company.Window\r\ncom/company/SickMedicHandler.java\r\n com.company.SickMedicHandler\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/tmp/compileJava/source-classes-mapping.txt b/build/tmp/compileJava/source-classes-mapping.txt
+--- a/build/tmp/compileJava/source-classes-mapping.txt	(revision 1c1cf316daec609408181e0578beaefa937cafed)
++++ b/build/tmp/compileJava/source-classes-mapping.txt	(date 1623255748731)
+@@ -44,9 +44,9 @@
+  com.company.SickHandler
+ com/company/MedicHandler.java
+  com.company.MedicHandler
++com/company/SickMedicHandler.java
++ com.company.SickMedicHandler
+ com/company/Main.java
+  com.company.Main
+ com/company/Window.java
+  com.company.Window
+-com/company/SickMedicHandler.java
+- com.company.SickMedicHandler
