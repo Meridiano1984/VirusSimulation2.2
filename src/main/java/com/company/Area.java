@@ -9,6 +9,7 @@ public class Area {
     private int positionX;
     private int positionY;
     private Field field;
+    public static int numberOfIteration=0;
 
     public Area(int positionX, int positionY, Field field) {
         this.positionX = positionX;

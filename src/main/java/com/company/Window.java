@@ -41,7 +41,7 @@ public class Window extends JPanel implements ActionListener {
         super.paintComponent(g);
         g.setColor(Color.BLACK);
         g.setFont(new Font("serif",Font.ITALIC, 20));
-        g.drawString("Tura nr: ", map.length*10 + 100, 20);
+        g.drawString("Tura nr: " + Area.numberOfIteration, map.length*10 + 100, 20);
         g.drawString("Ilosc zdrowych: " + gameObjectList.getHealthyList().size(), map.length*10+100, 50);
         g.drawString("Ilosc chorych: " + gameObjectList.getSickList().size(), map.length*10+100, 80);
         g.drawString("Ilosc medykow: " + gameObjectList.getMedicList().size(), map.length*10+100, 110);

@@ -16,13 +16,13 @@ public class Main {
         String sentence = new String();
 
 
-        int size = 120;                                                       //     ZMIENNA UMOZLIWIAJACA ZMINE ROZMIARU TABLICY
-        int numberOfHealthy =0 ;
-        int numberOfSick = 200;
-        int numberOfMedic = 0;
-        int numberOfSickMedic =0;
-        int numberOfObstacle =40;
-        int deathRateSick =100;
+        int size = 60;                                                       //     ZMIENNA UMOZLIWIAJACA ZMINE ROZMIARU TABLICY
+        int numberOfHealthy =20 ;
+        int numberOfSick = 20;
+        int numberOfMedic = 20;
+        int numberOfSickMedic =20;
+        int numberOfObstacle =20;
+        int deathRateSick =2;
         int iteration=100;
 //     TUTAJ ZNANAJDUJE SIE ATRYBUTY KLASY WIRUS TRZBE BEDZIE JE POBIERAC OD CZLOWIEKA
         Scanner scanner = new Scanner(System.in);
@@ -145,7 +145,7 @@ public class Main {
                 break;
             }
 
-
+            Area.numberOfIteration++;
             window.repaint();
             Thread.sleep(2000);
 

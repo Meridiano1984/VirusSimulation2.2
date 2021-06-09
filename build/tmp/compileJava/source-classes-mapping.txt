@@ -20,20 +20,16 @@ com/company/IObstacleCreator.java
  com.company.IObstacleCreator
 com/company/SickMedic.java
  com.company.SickMedic
-com/company/GameObject.java
- com.company.GameObject
-com/company/ISickMedicCreator.java
- com.company.ISickMedicCreator
-com/company/Obstacle.java
- com.company.Obstacle
-com/company/Sick.java
- com.company.Sick
 com/company/Medic.java
  com.company.Medic
-com/company/Area.java
- com.company.Area
-com/company/GameObjectList.java
- com.company.GameObjectList
+com/company/ISickMedicCreator.java
+ com.company.ISickMedicCreator
+com/company/GameObject.java
+ com.company.GameObject
+com/company/Sick.java
+ com.company.Sick
+com/company/Obstacle.java
+ com.company.Obstacle
 com/company/HealthyHandler.java
  com.company.HealthyHandler
 com/company/InteractionHandler.java
@@ -44,6 +40,10 @@ com/company/SickHandler.java
  com.company.SickHandler
 com/company/MedicHandler.java
  com.company.MedicHandler
+com/company/Area.java
+ com.company.Area
+com/company/GameObjectList.java
+ com.company.GameObjectList
 com/company/Main.java
  com.company.Main
 com/company/Window.java
