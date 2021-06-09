@@ -73,7 +73,7 @@ public class Main {
         window.repaint();
         Thread.sleep(2000);
 
-        sentence = ("Tura nr " + (0) + "\nWyzdrowiało tyle chorych: " + Healthy.healthyToFile + "\nZachorowało tyle zdrowych: " + Sick.sickToFile + "\nWyleczyło się tyle Lekarzy z choroby: " + Medic.medicToFile + "\nTyle Medyków zachorowało: " + SickMedic.sickMedicToFile + "\nUmarło tyle chorych: " + Sick.deathSickToFile + "\nUmarło tyle zarażonych lekarzy: " + SickMedic.deathSickMedicToFile + "\nIlość chorych: " + gameObjectList.getSickList().size() + "\nIlość zdrowych: " + gameObjectList.getHealthyList().size() + "\nIlość Medyków: " + gameObjectList.getMedicList().size() + "\nIlość Chorych Medyków: " + gameObjectList.getSickMedicList().size() +"\n\n");
+        sentence = ("Tura nr " + (0) + "\nIlość chorych: " + gameObjectList.getSickList().size() + "\nIlość zdrowych: " + gameObjectList.getHealthyList().size() + "\nIlość Medyków: " + gameObjectList.getMedicList().size() + "\nIlość Chorych Medyków: " + gameObjectList.getSickMedicList().size() +"\n\n");
         fileHandler.programDataFileWriter(sentence,fileInformations);
 
         Area.MapDisplay(map, size);
