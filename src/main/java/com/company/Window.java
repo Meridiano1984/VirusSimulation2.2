@@ -89,8 +89,6 @@ public class Window extends JPanel implements ActionListener {
                 gameObjectList.getMedicList(), gameObjectList.getSickMedicList(),
                 size);
 
-
-
         Timer t = new Timer(16, this);
         t.restart();
         frame.add(this);
