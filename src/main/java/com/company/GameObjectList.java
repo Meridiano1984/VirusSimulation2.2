@@ -127,8 +127,8 @@ public class GameObjectList {
 
     public GameObjectList regeneration(GameObjectList gameObjectList){
 
-        for(Healthy helathy: gameObjectList.getHealthyList()){
-            helathy.setMoved(false);
+        for(Healthy healthy: gameObjectList.getHealthyList()){
+            healthy.setMoved(false);
         }
         for(Medic medic: gameObjectList.getMedicList()){
             medic.setMoved(false);
@@ -171,9 +171,6 @@ public class GameObjectList {
         if(rememberI!=-1) {
             sickList.remove(sickList.get(rememberI));
         }
-
-
-
         return sickList;
     }
 

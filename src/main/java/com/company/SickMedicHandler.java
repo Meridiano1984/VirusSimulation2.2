@@ -18,7 +18,7 @@ public class SickMedicHandler extends InteractionHandler{
     protected GameObject interaction(){return null;}
 
 
-    public LinkedList<SickMedic> checkingNumberOfIteration(Area [][] map, LinkedList<SickMedic> sickMedicList, LinkedList<Medic> medicList, MedicHandler medicHandler, int size){
+    public LinkedList<SickMedic> checkingNumberOfIteration(LinkedList<SickMedic> sickMedicList){
 
         for (SickMedic sickMedic: sickMedicList){
             sickMedic.setNumberOfIteration(sickMedic.getNumberOfIteration()+1);

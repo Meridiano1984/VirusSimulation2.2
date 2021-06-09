@@ -11,9 +11,6 @@ public interface ISickMedicCreator {
         System.out.println("Sick w moemencie tworzenia listy:" + numberOfPeople);
 
 
-        SickMedic[] sickMedicTab = new SickMedic[numberOfPeople];
-
-
         for (int i=0; i<numberOfPeople; i++){
             sickMedicList.add(new SickMedic(virus,0));
         }

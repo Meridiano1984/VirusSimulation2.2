@@ -39,26 +39,6 @@ public class Sick implements GameObject {
         this.virus = virus;
     }
 
-
-//    protected LinkedList<Sick> killSick(LinkedList<Sick> sickList, Sick sickToKill){
-//
-//        int rememberI =-1;
-//        for(int i=0;i<sickList.size();i++){
-//
-//            if(sickList.get(i)==sickToKill){
-//                rememberI=i;
-//            }
-//        }
-//        if(rememberI!=-1) {
-//            sickList.remove(sickList.get(rememberI));
-//        }
-//
-//
-//
-//        return sickList;
-//    }
-
-
 }
 
 

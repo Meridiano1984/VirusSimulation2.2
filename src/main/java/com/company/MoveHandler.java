@@ -32,40 +32,8 @@ public class MoveHandler extends InteractionHandler {
     }
 
 
-//    public Area[][] moveTour (Area[][] map, LinkedList<GameObject> gameObjectsList) {
-//
-//        int i = 0;
-//
-//        for (GameObject gameObject : gameObjectsList) {
-//            Random random = new Random();
-//            int positionX;
-//            int positionY;
-//
-//            do {
-//
-//                positionX = random.nextInt(50);
-//                positionY = random.nextInt(50);
-//
-//            } while (map[positionX][positionY].getField().getGameObjectReference() != null);
-//
-//            map[positionX][positionY].getField().setGameObjectReference(gameObject);
-//
-//            if (gameObject instanceof Healthy) {
-//                System.out.println("HEALTHY X: " + positionX + " Y: " + positionY);
-//            } else if (gameObject instanceof Sick) {
-//                System.out.println("SICK X: " + positionX + " Y: " + positionY);
-//            } else if (gameObject instanceof Medic) {
-//                System.out.println("MEDIC X: " + positionX + " Y: " + positionY);
-//            } else if (gameObject instanceof SickMedic) {
-//                System.out.println("SICKMEDIC X: " + positionX + " Y: " + positionY);
-//            }
-//        }
-//
-//        return map;
-//    }
-
     public Area[][] twoFieldHealthyMoveHandler (Area[][] map, int size){
-//
+
 //        int t=0;
         int k=0;
         for(int i = 0; i<size; i++) {
@@ -77,7 +45,7 @@ public class MoveHandler extends InteractionHandler {
                     int positionX = map[i][j].getPositionX();
                     int newPositionX=0;
                     int positionY = map[i][j].getPositionY();
-//                    System.out.println("Pozycja obiektu nr: " + t + " X: " + positionX + " Y: "+positionY);
+//                  System.out.println("Pozycja obiektu nr: " + t + " X: " + positionX + " Y: "+positionY);
                     int newPositionY=0;
                     int randomField;
                     Random random = new Random();
@@ -132,7 +100,7 @@ public class MoveHandler extends InteractionHandler {
                                 newPositionX = tab[randomField - 1];
                                 newPositionY = tab[randomField];
                             }
-//
+
                             k++;
                             if(k>=24){break;}
 //                            System.out.println("PETLA WYKONALA SIE: " + k + " a randomField: " + randomField);

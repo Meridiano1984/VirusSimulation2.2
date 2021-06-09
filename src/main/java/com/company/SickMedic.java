@@ -6,7 +6,6 @@ public class SickMedic implements GameObject {
 
     private static int numberOfSickMedic = 0;
     private Virus virus;
-    private final int treatmentDuration = 3;
     private int numberOfIteration=0;
     public static int sickMedicToFile =0;
     public static int deathSickMedicToFile = 0;

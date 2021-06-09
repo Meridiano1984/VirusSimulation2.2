@@ -97,7 +97,7 @@ public class SickHandler extends InteractionHandler {
 
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                bound =random.nextInt(1000)+1;
+                bound =random.nextInt(100)+1;
 //                System.out.println("BOUND PRZED WARUNKIEM:"+bound);
 
                 if (map[i][j].getField().getGameObjectReference() instanceof Sick && ((Sick) map[i][j].getField().getGameObjectReference()).getVirus().getDeathRateOfSick()>=bound ) {

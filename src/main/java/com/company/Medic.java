@@ -17,18 +17,4 @@ public class Medic implements GameObject {
     public boolean isMoved() { return isMoved; }
     public void setMoved(boolean moved) { isMoved = moved; }
 
-//
-//    protected LinkedList<Medic> killMedic(LinkedList<Medic> medicList, Medic medicToKill){
-//        int rememberI =-1;
-//        for(int i=0;i<medicList.size();i++){
-//
-//            if(medicList.get(i)==medicToKill){
-//                rememberI=i;
-//            }
-//        }
-//        if(rememberI!=-1) {
-//            medicList.remove(medicList.get(rememberI));
-//        }
-//        return medicList;
-//    }
 }

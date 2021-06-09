@@ -1,51 +1,51 @@
-com/company/MoveHandler.java
- com.company.MoveHandler
-com/company/FileCreator.java
- com.company.FileCreator
-com/company/IMedicCreator.java
- com.company.IMedicCreator
-com/company/FileHandler.java
- com.company.FileHandler
+com/company/Field.java
+ com.company.Field
 com/company/IHealthyCreator.java
  com.company.IHealthyCreator
-com/company/Healthy.java
- com.company.Healthy
+com/company/Obstacle.java
+ com.company.Obstacle
+com/company/GameObject.java
+ com.company.GameObject
+com/company/FileCreator.java
+ com.company.FileCreator
+com/company/FileHandler.java
+ com.company.FileHandler
 com/company/Virus.java
  com.company.Virus
 com/company/FileInformations.java
  com.company.FileInformations
-com/company/ISickCreator.java
- com.company.ISickCreator
+com/company/InteractionHandler.java
+ com.company.InteractionHandler
 com/company/IObstacleCreator.java
  com.company.IObstacleCreator
-com/company/SickMedic.java
- com.company.SickMedic
-com/company/GameObjectList.java
- com.company.GameObjectList
+com/company/Healthy.java
+ com.company.Healthy
+com/company/MoveHandler.java
+ com.company.MoveHandler
+com/company/IMedicCreator.java
+ com.company.IMedicCreator
 com/company/ISickMedicCreator.java
  com.company.ISickMedicCreator
-com/company/SickMedicHandler.java
- com.company.SickMedicHandler
 com/company/Sick.java
  com.company.Sick
 com/company/HealthyHandler.java
  com.company.HealthyHandler
-com/company/InteractionHandler.java
- com.company.InteractionHandler
-com/company/GameObject.java
- com.company.GameObject
-com/company/SickHandler.java
- com.company.SickHandler
+com/company/ISickCreator.java
+ com.company.ISickCreator
+com/company/SickMedicHandler.java
+ com.company.SickMedicHandler
 com/company/MedicHandler.java
  com.company.MedicHandler
 com/company/Area.java
  com.company.Area
+com/company/SickMedic.java
+ com.company.SickMedic
+com/company/GameObjectList.java
+ com.company.GameObjectList
 com/company/Medic.java
  com.company.Medic
-com/company/Obstacle.java
- com.company.Obstacle
-com/company/Field.java
- com.company.Field
+com/company/SickHandler.java
+ com.company.SickHandler
 com/company/Main.java
  com.company.Main
 com/company/Window.java

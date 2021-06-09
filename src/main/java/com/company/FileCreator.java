@@ -7,6 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class FileCreator {
+
     public FileInformations fileInitialization (){
 
         //TWORZYMY OBIEKT FILEINFORMATIONS PRZECHOWUJACY SCIEZKI I DANE ZWIAZNE Z PLIKAMI W NASZYM PROJEKCIE. NASTEPNIE PO KOLEI INICJALIZUJEMY JEGO POJEDNYACZE ZMIENNNE TWORZAC PRZY OKAZJI FOLDERY I PLIKI ORAZ WYAMAGANE W NICH DANE
@@ -44,7 +45,7 @@ public class FileCreator {
         return fileInformations;
     }
 
-    public String directoryCreator(String patch, String directoryName){
+    private String directoryCreator(String patch, String directoryName){
         String directoryPath = patch +"\\"+ directoryName;
         try {
             Files.createDirectory(Paths.get(directoryPath));
@@ -59,7 +60,7 @@ public class FileCreator {
     }
 
 
-    public FileInformations  programDataFileCreator (String patch,String programDataName, FileInformations fileInformations ){
+    protected FileInformations  programDataFileCreator (String patch,String programDataName, FileInformations fileInformations ){
 
         FileHandler fileHandler = new FileHandler();
         String programDataFilePatch = patch+"\\"+programDataName;
@@ -84,7 +85,7 @@ public class FileCreator {
         return fileInformations;
     }
 
-    public String simulationDataDirectoryCreator (String patch, String simulationDataFileName){
+    private String simulationDataDirectoryCreator (String patch, String simulationDataFileName){
         String simulationDataDirectoryPath = patch +"\\"+ simulationDataFileName;
 
         try {
@@ -99,7 +100,7 @@ public class FileCreator {
         return simulationDataDirectoryPath;               //PROBLEM PONIEWAZ GDY PLIK NIE ISTNIEJE ZWRACA SCIEZKE DO NIEISTNIEJACEGO PLKI JAK ZROBIC TO LEPEIEJ?
     }
 
-    public String simulationDataFileCreator (String path, String simulationDataFileName){
+    private String simulationDataFileCreator (String path, String simulationDataFileName){
 
         String simulationDataFilePath = path +"\\"+ simulationDataFileName;
 

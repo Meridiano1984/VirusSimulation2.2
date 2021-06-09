@@ -19,21 +19,4 @@ public class Healthy implements GameObject {
     public void setMoved(boolean moved) { isMoved = moved; }
 
 
-    protected LinkedList<Healthy> killHealthy(LinkedList <Healthy> healthyList, Healthy healthyToKill){
-
-
-        int rememberI =-1;
-        for(int i=0;i<healthyList.size();i++){
-
-            if(healthyList.get(i)==healthyToKill){
-                rememberI=i;
-            }
-        }
-        if(rememberI!=-1) {
-            healthyList.remove(healthyList.get(rememberI));
-        }
-
-        return healthyList;
-    }
-
 }

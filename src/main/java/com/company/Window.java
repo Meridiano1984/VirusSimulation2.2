@@ -11,9 +11,8 @@ import static com.company.Area.mapGameObjectInitialization;
 
 public class Window extends JPanel implements ActionListener {
 
-//    int map.length = 40;
     Area[][] map;
-    Virus virus = new Virus(2);
+    Virus virus;
     int numberOfObjects;
     int numberOfHealthy;
     int numberOfSick;
@@ -21,7 +20,6 @@ public class Window extends JPanel implements ActionListener {
     int numberOfSickMedic;
     int numberOfObstacle;
     GameObjectList gameObjectList;
-//    LinkedList<GameObject> movingList = gameObjectList.movingListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList());
 
 
     SickHandler sickHandler;                  //TWORZENIE OBIEKTOW HENDLEROW NA KTORYCH RZECZ BEDA WYWOLYWANE FUNKCJE
@@ -30,10 +28,6 @@ public class Window extends JPanel implements ActionListener {
     MedicHandler medicHandler;
     MoveHandler moveHandler ;
 
-
-//    public static void main(String[] arg){
-//        Window window = new Window();
-//    }
 
 
     public void paint(Graphics g) {
@@ -102,7 +96,7 @@ public class Window extends JPanel implements ActionListener {
 
 
 
-    public Window(Area[][] map,int numberOfObjects, int numberOfHealthy, int numberOfSick, int numberOfMedic, int numberOfSickMedic,int numberOfObstacle,GameObjectList gameObjectList){
+    public Window(Area[][] map,int numberOfObjects, int numberOfHealthy, int numberOfSick, int numberOfMedic, int numberOfSickMedic,int numberOfObstacle,GameObjectList gameObjectList, Virus virus){
         JFrame frame = new JFrame("Simulation");
         frame.setSize(800,600);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -120,17 +114,11 @@ public class Window extends JPanel implements ActionListener {
         this.numberOfSickMedic = numberOfSickMedic;
         this.numberOfMedic = numberOfMedic;
         this.numberOfObstacle = numberOfObstacle;
+        this.virus= virus;
 
         this.gameObjectList = gameObjectList;
 
         this.map =map;
-
-//        mapGameObjectInitialization(map,
-//                gameObjectList.getObstacleList(),
-//                gameObjectList.getHealthyList(),
-//                gameObjectList.getSickList(),
-//                gameObjectList.getMedicList(), gameObjectList.getSickMedicList(),
-//                map.length);
 
 //        Timer t = new Timer(2000, this);
 //        t.restart();
