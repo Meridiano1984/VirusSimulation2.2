@@ -1,11 +1,12 @@
 package com.company;
 
+import java.awt.*;
 import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         FileInformations fileInformations;
         FileCreator fileCreator =new FileCreator();
@@ -16,40 +17,39 @@ public class Main {
 
 
         int size = 10;                                                       //     ZMIENNA UMOZLIWIAJACA ZMINE ROZMIARU TABLICY
-        int numberOfHealthy = 0*5;
-        int numberOfSick = 40*5;
-        int numberOfMedic = 0*5;
-        int numberOfSickMedic =0*5;
-        int numberOfObstacle =0*5;
+        int numberOfHealthy = 5;
+        int numberOfSick = 5;
+        int numberOfMedic = 5;
+        int numberOfSickMedic =5;
+        int numberOfObstacle =5;
         int deathRateSick =4;
-        int iteration;
+        int iteration=10;
 //     TUTAJ ZNANAJDUJE SIE ATRYBUTY KLASY WIRUS TRZBE BEDZIE JE POBIERAC OD CZLOWIEKA
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("                                            SYMULACJA PANDEMII                        ");
-        System.out.println("PODAJE DANE DOTYCZĄCE SYMULACJI");
-        System.out.print("LICZBA MEDYKÓW: ");
-        numberOfMedic =(int)scanner.nextInt();
-        System.out.print("LICZBA CHORYCH: ");
-        numberOfSick =scanner.nextInt();
-        System.out.print("LICZBA ZDROWYCH: ");
-        numberOfHealthy =scanner.nextInt();
-        System.out.print("SMIERTELNOSC WIRUSA (WYRAZONA W PUNKTACH PROCENTOEYCH): ");
-        deathRateSick =scanner.nextInt();
-        System.out.print("LICZBA TUR: ");
-        iteration =scanner.nextInt();
+//
+//        System.out.println("                                            SYMULACJA PANDEMII                        ");
+//        System.out.println("PODAJE DANE DOTYCZĄCE SYMULACJI");
+//        System.out.print("LICZBA MEDYKÓW: ");
+//        numberOfMedic =(int)scanner.nextInt();
+//        System.out.print("LICZBA CHORYCH: ");
+//        numberOfSick =scanner.nextInt();
+//        System.out.print("LICZBA ZDROWYCH: ");
+//        numberOfHealthy =scanner.nextInt();
+//        System.out.print("SMIERTELNOSC WIRUSA (WYRAZONA W PUNKTACH PROCENTOEYCH): ");
+//        deathRateSick =scanner.nextInt();
+//        System.out.print("LICZBA TUR: ");
+//        iteration =scanner.nextInt();
 
 
 
 
 
         Virus virus = new Virus(deathRateSick);        //     INICJALIZACJA KLASY WIRUS
-        int numberOfObjects =60;                                           //     WYBIERAMY LICZBE OBIEKTOW
-        GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfObjects), IObstacleCreator.createObstacle(numberOfObjects), IMedicCreator.createMedic(numberOfObjects), ISickCreator.createSick(numberOfObjects, virus), ISickMedicCreator.createSickMedic(numberOfObjects, virus), virus);              // INICJALIZUJEMY LISTE OBIEKATMI, ARGUMENTY DO TEJ FUNKCJI SA DOSTARCZNAE PRZEZ FUNKCJE KTORE TWORZA LISTY OBIEKTOW
-//        GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfHealthy), IObstacleCreator.createObstacle(numberOfObstacle), IMedicCreator.createMedic(numberOfMedic), ISickCreator.createSick(numberOfSick, virus), ISickMedicCreator.createSickMedic(numberOfSickMedic, virus), virus);
+        int numberOfObjects =numberOfHealthy+numberOfMedic+numberOfSickMedic+numberOfObstacle+numberOfSick;                                           //     WYBIERAMY LICZBE OBIEKTOW
+//        GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfObjects), IObstacleCreator.createObstacle(numberOfObjects), IMedicCreator.createMedic(numberOfObjects), ISickCreator.createSick(numberOfObjects, virus), ISickMedicCreator.createSickMedic(numberOfObjects, virus), virus);              // INICJALIZUJEMY LISTE OBIEKATMI, ARGUMENTY DO TEJ FUNKCJI SA DOSTARCZNAE PRZEZ FUNKCJE KTORE TWORZA LISTY OBIEKTOW
+        GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfHealthy), IObstacleCreator.createObstacle(numberOfObstacle), IMedicCreator.createMedic(numberOfMedic), ISickCreator.createSick(numberOfSick, virus), ISickMedicCreator.createSickMedic(numberOfSickMedic, virus), virus);
 //        LinkedList<GameObject> bigList = gameObjectList.bigListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList(), gameObjectList.getSickMedicList());                                                                                                                                                 // utworzeni listy zawierajace wszystkie gameobjecty z wyjatkiem obstacle sluży do przmeiszczania obiektow
         LinkedList<GameObject> movingList = gameObjectList.movingListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList());
-        Window window = new Window();
         //Area[][] map = new Map[50][50];
         Area[][] map = Area.mapGenerator(size, size);                                  //TWORZENIE MAPY O WYMIARACH 50 NA 50 ZA POMOCA SPECJALNEJ FUNKCJI
 
@@ -68,8 +68,16 @@ public class Main {
 
 
         //PRZYKLADOWE PARE TUR PRZEMIESZCZANIA//
+
+        Window window = new Window(map,numberOfObjects,numberOfHealthy,numberOfSick,numberOfMedic,numberOfSickMedic,numberOfObstacle);
         Area.MapDisplay(map, size);
         for (int i = 0; i <iteration; i++) {
+
+
+
+
+
+
             Medic.medicToFile = 0;
             SickMedic.sickMedicToFile = 0;
             Healthy.healthyToFile = 0;
@@ -130,6 +138,13 @@ public class Main {
             gameObjectList.virusSpreadingRegeneration(gameObjectList);
 
 
+
+
+            window.repaint();
+
+            Thread.sleep(5000);
+
         }
+
     }
 }

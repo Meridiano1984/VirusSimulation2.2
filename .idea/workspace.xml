@@ -11,10 +11,20 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataFile/ProgramData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DataFile/ProgramData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/Window.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IHealthyCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/IHealthyCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IMedicCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/IMedicCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IObstacleCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/IObstacleCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/ISickCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/ISickCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/ISickMedicCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/ISickMedicCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/MoveHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +80,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Window">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="VirusSimulation2.2.main" />

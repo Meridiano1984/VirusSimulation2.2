@@ -7,7 +7,7 @@ public interface ISickCreator {
     public static LinkedList<Sick> createSick (int numberOfPeople, Virus virus ){
         List<Sick> sickList = new LinkedList<>();
 
-        numberOfPeople=numberOfPeople/5;
+
         System.out.println("Sick w momencie tworzenia listy :" + numberOfPeople);
 
 

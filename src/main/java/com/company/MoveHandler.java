@@ -32,37 +32,37 @@ public class MoveHandler extends InteractionHandler {
     }
 
 
-    public Area[][] moveTour (Area[][] map, LinkedList<GameObject> gameObjectsList) {
-
-        int i = 0;
-
-        for (GameObject gameObject : gameObjectsList) {
-            Random random = new Random();
-            int positionX;
-            int positionY;
-
-            do {
-
-                positionX = random.nextInt(50);
-                positionY = random.nextInt(50);
-
-            } while (map[positionX][positionY].getField().getGameObjectReference() != null);
-
-            map[positionX][positionY].getField().setGameObjectReference(gameObject);
-
-            if (gameObject instanceof Healthy) {
-                System.out.println("HEALTHY X: " + positionX + " Y: " + positionY);
-            } else if (gameObject instanceof Sick) {
-                System.out.println("SICK X: " + positionX + " Y: " + positionY);
-            } else if (gameObject instanceof Medic) {
-                System.out.println("MEDIC X: " + positionX + " Y: " + positionY);
-            } else if (gameObject instanceof SickMedic) {
-                System.out.println("SICKMEDIC X: " + positionX + " Y: " + positionY);
-            }
-        }
-
-        return map;
-    }
+//    public Area[][] moveTour (Area[][] map, LinkedList<GameObject> gameObjectsList) {
+//
+//        int i = 0;
+//
+//        for (GameObject gameObject : gameObjectsList) {
+//            Random random = new Random();
+//            int positionX;
+//            int positionY;
+//
+//            do {
+//
+//                positionX = random.nextInt(50);
+//                positionY = random.nextInt(50);
+//
+//            } while (map[positionX][positionY].getField().getGameObjectReference() != null);
+//
+//            map[positionX][positionY].getField().setGameObjectReference(gameObject);
+//
+//            if (gameObject instanceof Healthy) {
+//                System.out.println("HEALTHY X: " + positionX + " Y: " + positionY);
+//            } else if (gameObject instanceof Sick) {
+//                System.out.println("SICK X: " + positionX + " Y: " + positionY);
+//            } else if (gameObject instanceof Medic) {
+//                System.out.println("MEDIC X: " + positionX + " Y: " + positionY);
+//            } else if (gameObject instanceof SickMedic) {
+//                System.out.println("SICKMEDIC X: " + positionX + " Y: " + positionY);
+//            }
+//        }
+//
+//        return map;
+//    }
 
     public Area[][] twoFieldHealthyMoveHandler (Area[][] map, int size){
 //
@@ -334,7 +334,7 @@ public class MoveHandler extends InteractionHandler {
 //                            System.out.println("Pozycja po zamianie   X: "+ newPositionX+ " Y: "+ newPositionY);
                         } while (!(newPositionX >= 0 && newPositionX < size && newPositionY >= 0 && newPositionY < size));
                         if(k>=8){break;}
-                        //System.out.println("Pozycja po zamianie   X: "+ newPositionX+ " Y: "+ newPositionY);
+//                        System.out.println("Pozycja po zamianie   X: "+ newPositionX+ " Y: "+ newPositionY);
 //                        if(map[newPositionX][newPositionY].getField().getGameObjectReference()==null){
 //                            System.out.println("                                        WOLNE");
 //                        } else if(map[newPositionX][newPositionY].getField().getGameObjectReference()!=null){

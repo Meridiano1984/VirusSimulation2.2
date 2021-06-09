@@ -7,7 +7,6 @@ public interface IObstacleCreator {
     public static LinkedList<Obstacle> createObstacle (int numberOfPeople ){
         List<Obstacle> obstacleList =new LinkedList<>();
 
-        numberOfPeople = numberOfPeople/5;
         System.out.println("Obstacle w momencie tworzenia listy :" + numberOfPeople);
 
 
