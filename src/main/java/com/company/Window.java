@@ -11,7 +11,7 @@ import static com.company.Area.mapGameObjectInitialization;
 
 public class Window extends JPanel implements ActionListener {
 
-    int size = 20;
+    int size = 40;
     Area[][] map = Area.mapGenerator(size, size);
     Virus virus = new Virus(2);
     int numberOfObjects =100;
@@ -41,11 +41,11 @@ public class Window extends JPanel implements ActionListener {
         super.paintComponent(g);
         g.setColor(Color.BLACK);
         g.setFont(new Font("serif",Font.ITALIC, 20));
-        g.drawString("Tura nr: ", 400, 20);
-        g.drawString("Ilosc zdrowych: " + gameObjectList.getHealthyList().size(), 400, 50);
-        g.drawString("Ilosc chorych: " + gameObjectList.getSickList().size(), 400, 80);
-        g.drawString("Ilosc medykow: " + gameObjectList.getMedicList().size(), 400, 110);
-        g.drawString("Ilosc chorych medykow: " + gameObjectList.getSickMedicList().size(), 400, 140);
+        g.drawString("Tura nr: ", size*10 + 100, 20);
+        g.drawString("Ilosc zdrowych: " + gameObjectList.getHealthyList().size(), size*10+100, 50);
+        g.drawString("Ilosc chorych: " + gameObjectList.getSickList().size(), size*10+100, 80);
+        g.drawString("Ilosc medykow: " + gameObjectList.getMedicList().size(), size*10+100, 110);
+        g.drawString("Ilosc chorych medykow: " + gameObjectList.getSickMedicList().size(), size*10+100, 140);
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (map[i][j].getField().getGameObjectReference() == null) {
