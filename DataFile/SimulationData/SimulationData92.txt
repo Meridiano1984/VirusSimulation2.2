@@ -1,0 +1,12 @@
+Tura nr 1
+Wyzdrowiało tyle chorych: 2
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 5
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 193
+Ilość zdrowych: 2
+Ilość Medyków: 1
+Ilość Chorych Medyków: 0
+

@@ -19,18 +19,23 @@ public class Area {
     public int getPositionX() {
         return positionX;
     }
+
     public void setPositionX(int positionX) {
         this.positionX = positionX;
     }
+
     public int getPositionY() {
         return positionY;
     }
+
     public void setPositionY(int positionY) {
         this.positionY = positionY;
     }
+
     public Field getField() {
         return field;
     }
+
     public void setField(Field field) {
         this.field = field;
     }
@@ -55,19 +60,19 @@ public class Area {
     //LEPSZE WYSWIETLANIE MAPY
     public static void MapDisplay(Area[][] map, int size) {
 
-        for(int i =0; i<size; i++){
-            for (int j=0; j<size;j++){
-                if(map[i][j].getField().getGameObjectReference()==null){
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (map[i][j].getField().getGameObjectReference() == null) {
                     System.out.print(" X");
-                } else if(map[i][j].getField().getGameObjectReference() instanceof Healthy){
+                } else if (map[i][j].getField().getGameObjectReference() instanceof Healthy) {
                     System.out.print(" H");
-                } else if(map[i][j].getField().getGameObjectReference() instanceof Medic){
+                } else if (map[i][j].getField().getGameObjectReference() instanceof Medic) {
                     System.out.print(" M");
-                } else if (map[i][j].getField().getGameObjectReference() instanceof Sick){
+                } else if (map[i][j].getField().getGameObjectReference() instanceof Sick) {
                     System.out.print(" S");
-                } else if(map[i][j].getField().getGameObjectReference() instanceof Obstacle){
+                } else if (map[i][j].getField().getGameObjectReference() instanceof Obstacle) {
                     System.out.print(" O");
-                } else if(map[i][j].getField().getGameObjectReference() instanceof SickMedic){
+                } else if (map[i][j].getField().getGameObjectReference() instanceof SickMedic) {
                     System.out.print(" Z");
                 }
 
@@ -75,7 +80,6 @@ public class Area {
             System.out.println(" ");
         }
     }
-
 
 
     // FUNKCJA INICJALIZUJAC MAPE
@@ -293,7 +297,7 @@ public class Area {
         return map;
     }
 
-    public static Area[][] mapGameObjectInitialization(Area[][] map, List<Obstacle> obstacleList, List<Healthy> healthyList, List<Sick> sickList, List<Medic> medicList, List<SickMedic> sickMedicList,int size) {
+    public static Area[][] mapGameObjectInitialization(Area[][] map, List<Obstacle> obstacleList, List<Healthy> healthyList, List<Sick> sickList, List<Medic> medicList, List<SickMedic> sickMedicList, int size) {
 
 //        System.out.println(" ");
 //        System.out.println("Obstacle");
@@ -304,32 +308,32 @@ public class Area {
 //        System.out.println(" ");
 //        System.out.println("Healthy");
 //        System.out.println(" ");
-        map = mapHealthyInitialization(map, healthyList,size);
+        map = mapHealthyInitialization(map, healthyList, size);
 //        primitiveMapDisplay(map,size);
 
 //        System.out.println(" ");
 //        System.out.println("Sick");
 //        System.out.println(" ");
-        map = mapSickInitialization(map, sickList,size);
+        map = mapSickInitialization(map, sickList, size);
 //        primitiveMapDisplay(map,size);
 
 //        System.out.println(" ");
 //        System.out.println("Medic");
 //        System.out.println(" ");
-        map = mapMedicInitialization(map, medicList,size);
+        map = mapMedicInitialization(map, medicList, size);
 //        primitiveMapDisplay(map,size);
 
 //        System.out.println(" ");
 //        System.out.println("SickMedic");
 //        System.out.println(" ");
-        map = mapSickMedicInitialization(map, sickMedicList,size);
+        map = mapSickMedicInitialization(map, sickMedicList, size);
 //        primitiveMapDisplay(map,size);
 
         return map;
     }
 
     // PRYMITYWNE(słowne) WYSWIETLANIE MAPY
-    public static void primitiveMapDisplay(Area[][] map,int size) {
+    public static void primitiveMapDisplay(Area[][] map, int size) {
 
         int numberOfObstacle = 0;
         int numberOfHealthy = 0;
@@ -383,6 +387,16 @@ public class Area {
         System.out.println("SUMA = " + suma);
 
     }
+
+
+    public static boolean isEnd(GameObjectList gameObjectList) {
+
+        if (gameObjectList.getHealthyList().size() == 0 && gameObjectList.getSickList().size() == 0 && gameObjectList.getSickMedicList().size() == 0 && gameObjectList.getMedicList().size() == 0) {
+            return true;
+        }
+        return false;
+    }
+
 
 }
 

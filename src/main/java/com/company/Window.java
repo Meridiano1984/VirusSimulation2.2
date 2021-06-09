@@ -20,8 +20,8 @@ public class Window extends JPanel implements ActionListener {
     int numberOfMedic;
     int numberOfSickMedic;
     int numberOfObstacle;
-    GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfHealthy), IObstacleCreator.createObstacle(numberOfObstacle), IMedicCreator.createMedic(numberOfMedic), ISickCreator.createSick(numberOfSick, virus), ISickMedicCreator.createSickMedic(numberOfSickMedic, virus), virus);
-    LinkedList<GameObject> movingList = gameObjectList.movingListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList());
+    GameObjectList gameObjectList;
+//    LinkedList<GameObject> movingList = gameObjectList.movingListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList());
 
 
     SickHandler sickHandler;                  //TWORZENIE OBIEKTOW HENDLEROW NA KTORYCH RZECZ BEDA WYWOLYWANE FUNKCJE
@@ -85,7 +85,7 @@ public class Window extends JPanel implements ActionListener {
 
 
 
-    public Window(Area[][] map,int numberOfObjects, int numberOfHealthy, int numberOfSick, int numberOfMedic, int numberOfSickMedic,int numberOfObstacle){
+    public Window(Area[][] map,int numberOfObjects, int numberOfHealthy, int numberOfSick, int numberOfMedic, int numberOfSickMedic,int numberOfObstacle,GameObjectList gameObjectList){
         JFrame frame = new JFrame("Simulation");
         frame.setSize(800,600);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -104,6 +104,7 @@ public class Window extends JPanel implements ActionListener {
         this.numberOfMedic = numberOfMedic;
         this.numberOfObstacle = numberOfObstacle;
 
+        this.gameObjectList = gameObjectList;
 
         this.map =map;
 

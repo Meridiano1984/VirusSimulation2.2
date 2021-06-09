@@ -16,14 +16,14 @@ public class Main {
         String sentence = new String();
 
 
-        int size = 10;                                                       //     ZMIENNA UMOZLIWIAJACA ZMINE ROZMIARU TABLICY
-        int numberOfHealthy = 5;
-        int numberOfSick = 5;
-        int numberOfMedic = 5;
-        int numberOfSickMedic =5;
-        int numberOfObstacle =5;
-        int deathRateSick =4;
-        int iteration=10;
+        int size = 120;                                                       //     ZMIENNA UMOZLIWIAJACA ZMINE ROZMIARU TABLICY
+        int numberOfHealthy =0 ;
+        int numberOfSick = 200;
+        int numberOfMedic = 0;
+        int numberOfSickMedic =0;
+        int numberOfObstacle =40;
+        int deathRateSick =100;
+        int iteration=100;
 //     TUTAJ ZNANAJDUJE SIE ATRYBUTY KLASY WIRUS TRZBE BEDZIE JE POBIERAC OD CZLOWIEKA
         Scanner scanner = new Scanner(System.in);
 //
@@ -69,9 +69,12 @@ public class Main {
 
         //PRZYKLADOWE PARE TUR PRZEMIESZCZANIA//
 
-        Window window = new Window(map,numberOfObjects,numberOfHealthy,numberOfSick,numberOfMedic,numberOfSickMedic,numberOfObstacle);
+        Window window = new Window(map,numberOfObjects,numberOfHealthy,numberOfSick,numberOfMedic,numberOfSickMedic,numberOfObstacle,gameObjectList);
+        window.repaint();
+        Thread.sleep(2000);
+
         Area.MapDisplay(map, size);
-        for (int i = 0; i <iteration; i++) {
+        for (int i = 0; i <iteration || Area.isEnd(gameObjectList); i++) {
 
 
 
@@ -138,13 +141,17 @@ public class Main {
             gameObjectList.virusSpreadingRegeneration(gameObjectList);
 
 
+            if(Area.isEnd(gameObjectList)){
+                break;
+            }
 
 
             window.repaint();
-
-            Thread.sleep(5000);
+            Thread.sleep(2000);
 
         }
+        window.repaint();
+
 
     }
 }
