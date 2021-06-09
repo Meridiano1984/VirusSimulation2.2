@@ -24,8 +24,8 @@ com/company/GameObjectList.java
  com.company.GameObjectList
 com/company/ISickMedicCreator.java
  com.company.ISickMedicCreator
-com/company/Main.java
- com.company.Main
+com/company/SickMedicHandler.java
+ com.company.SickMedicHandler
 com/company/Sick.java
  com.company.Sick
 com/company/HealthyHandler.java
@@ -42,11 +42,11 @@ com/company/Area.java
  com.company.Area
 com/company/Medic.java
  com.company.Medic
-com/company/Window.java
- com.company.Window
-com/company/Field.java
- com.company.Field
 com/company/Obstacle.java
  com.company.Obstacle
-com/company/SickMedicHandler.java
- com.company.SickMedicHandler
+com/company/Field.java
+ com.company.Field
+com/company/Main.java
+ com.company.Main
+com/company/Window.java
+ com.company.Window

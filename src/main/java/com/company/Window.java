@@ -11,15 +11,15 @@ import static com.company.Area.mapGameObjectInitialization;
 
 public class Window extends JPanel implements ActionListener {
 
-    int size = 100;
+    int size = 20;
     Area[][] map = Area.mapGenerator(size, size);
     Virus virus = new Virus(2);
     int numberOfObjects =100;
-    int numberOfHealthy = 40*5;
-    int numberOfSick = 40*5;
-    int numberOfMedic = 10*5;
-    int numberOfSickMedic =10*5;
-    int numberOfObstacle =10*5;
+    int numberOfHealthy = 5*5;
+    int numberOfSick = 5*5;
+    int numberOfMedic = 5*5;
+    int numberOfSickMedic =5*5;
+    int numberOfObstacle =5*5;
     GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfHealthy), IObstacleCreator.createObstacle(numberOfObstacle), IMedicCreator.createMedic(numberOfMedic), ISickCreator.createSick(numberOfSick, virus), ISickMedicCreator.createSickMedic(numberOfSickMedic, virus), virus);
     LinkedList<GameObject> movingList = gameObjectList.movingListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList());
 
@@ -42,21 +42,23 @@ public class Window extends JPanel implements ActionListener {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (map[i][j].getField().getGameObjectReference() == null) {
-                } else if (map[i][j].getField().getGameObjectReference() instanceof Healthy) {
                     g.setColor(Color.LIGHT_GRAY);
-                    g.fillOval(i, j, 1, 1);
+                    g.fillOval(10*i, 10*j, 10,10);
+                } else if (map[i][j].getField().getGameObjectReference() instanceof Healthy) {
+                    g.setColor(Color.YELLOW);
+                    g.fillOval(10*i, 10*j, 10,10);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof Medic) {
                     g.setColor(Color.CYAN);
-                    g.fillOval(i, j, 1, 1);
+                    g.fillOval(10*i, 10*j, 10, 10);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof Sick) {
                     g.setColor(Color.RED);
-                    g.fillOval(i, j, 1, 1);
+                    g.fillOval(10*i, 10*j, 10, 10);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof Obstacle) {
                     g.setColor(Color.BLACK);
-                    g.fillOval(i, j, 1, 1);
+                    g.fillOval(10*i, 10*j, 10, 10);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof SickMedic) {
                     g.setColor(Color.BLUE);
-                    g.fillOval(i, j, 1, 1);
+                    g.fillOval(10*i, 10*j, 10, 10);
                 }
             }
         }
