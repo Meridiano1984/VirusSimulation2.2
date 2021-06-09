@@ -16,7 +16,7 @@ public class Main {
         String sentence = new String();
 
 
-        int size = 60;                                                       //     ZMIENNA UMOZLIWIAJACA ZMINE ROZMIARU TABLICY
+        int size = 40;                                                       //     ZMIENNA UMOZLIWIAJACA ZMINE ROZMIARU TABLICY
         int numberOfHealthy =20 ;
         int numberOfSick = 20;
         int numberOfMedic = 20;
@@ -73,12 +73,11 @@ public class Main {
         window.repaint();
         Thread.sleep(2000);
 
+        sentence = ("Tura nr " + (0) + "\nWyzdrowiało tyle chorych: " + Healthy.healthyToFile + "\nZachorowało tyle zdrowych: " + Sick.sickToFile + "\nWyleczyło się tyle Lekarzy z choroby: " + Medic.medicToFile + "\nTyle Medyków zachorowało: " + SickMedic.sickMedicToFile + "\nUmarło tyle chorych: " + Sick.deathSickToFile + "\nUmarło tyle zarażonych lekarzy: " + SickMedic.deathSickMedicToFile + "\nIlość chorych: " + gameObjectList.getSickList().size() + "\nIlość zdrowych: " + gameObjectList.getHealthyList().size() + "\nIlość Medyków: " + gameObjectList.getMedicList().size() + "\nIlość Chorych Medyków: " + gameObjectList.getSickMedicList().size() +"\n\n");
+        fileHandler.programDataFileWriter(sentence,fileInformations);
+
         Area.MapDisplay(map, size);
         for (int i = 0; i <iteration || Area.isEnd(gameObjectList); i++) {
-
-
-
-
 
 
             Medic.medicToFile = 0;
