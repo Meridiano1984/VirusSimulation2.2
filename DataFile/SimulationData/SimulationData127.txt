@@ -1,0 +1,20 @@
+Tura nr 0
+Ilość osób: 24
+Ilość chorych: 1
+Ilość zdrowych: 1
+Ilość Medyków: 1
+Ilość Chorych Medyków: 20
+Ilość przeszkód: 1
+
+Tura nr 1
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 2
+Ilość Medyków: 21
+Ilość Chorych Medyków: 0
+

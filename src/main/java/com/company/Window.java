@@ -70,17 +70,6 @@ public class Window extends JPanel implements ActionListener {
                 }
             }
         }
-        for (int i = 0; i < 10; i++) {
-            map = moveHandler.twoFieldHealthyMoveHandler(map, map.length);
-            map = moveHandler.twoFieldMedicMoveHandler(map, map.length);
-            map = moveHandler.oneFieldSickMoveHandler(map, map.length);
-            healthyHandler.transformationToSick(map,virus,gameObjectList.getHealthyList(),gameObjectList.getSickList(),gameObjectList);
-            medicHandler.transformationToSickMedic(map, virus, gameObjectList.getMedicList(), gameObjectList.getSickMedicList(),gameObjectList);
-            sickMedicHandler.checkingNumberOfIteration(map, gameObjectList.getSickMedicList(), gameObjectList.getMedicList(), medicHandler, map.length);
-            sickMedicHandler.transformationToMedicOrDying(map,gameObjectList.getMedicList(),gameObjectList.getSickMedicList(),medicHandler,map.length,gameObjectList);
-            sickHandler.transformationToHealthy(map, gameObjectList.getHealthyList(), gameObjectList.getSickList(),gameObjectList);
-            sickHandler.virusKillSick(map,gameObjectList.getSickList(),gameObjectList);
-        }
     }
 
 
@@ -100,7 +89,7 @@ public class Window extends JPanel implements ActionListener {
         this.numberOfObjects =numberOfObjects;
         this.numberOfHealthy = numberOfHealthy;
         this.numberOfSick =numberOfSick;
-        this.numberOfMedic = numberOfSickMedic;
+        this.numberOfSickMedic = numberOfSickMedic;
         this.numberOfMedic = numberOfMedic;
         this.numberOfObstacle = numberOfObstacle;
 

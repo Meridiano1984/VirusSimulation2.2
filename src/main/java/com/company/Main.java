@@ -1,6 +1,7 @@
 package com.company;
 
 import java.awt.*;
+import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -8,15 +9,15 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
+        /*ODCZYTANIE ILOSCI ODTWORZEN SYMULACJI UTWORZENIE PLIKOW ZBIERAJACYCH DANE Z SYMULACJI*/
         FileInformations fileInformations;
         FileCreator fileCreator =new FileCreator();
         FileHandler fileHandler = new FileHandler();
-
         fileInformations = fileCreator.fileInitialization();
         String sentence = new String();
 
-
-        int size = 40;                                                       //     ZMIENNA UMOZLIWIAJACA ZMINE ROZMIARU TABLICY
+        /*ZADEKLAROWNIE I INICJALIZACJIA WIEKSZOSCI ZMIENNYCH PRYMITYWNYCH UZYWANYCH W PROGRAMIE */
+        int size = 20;
         int numberOfHealthy =20 ;
         int numberOfSick = 20;
         int numberOfMedic = 20;
@@ -24,28 +25,64 @@ public class Main {
         int numberOfObstacle =20;
         int deathRateSick =2;
         int iteration=100;
-//     TUTAJ ZNANAJDUJE SIE ATRYBUTY KLASY WIRUS TRZBE BEDZIE JE POBIERAC OD CZLOWIEKA
+        int numberOfObjects =numberOfHealthy+numberOfMedic+numberOfSickMedic+numberOfObstacle+numberOfSick;
         Scanner scanner = new Scanner(System.in);
-//
-//        System.out.println("                                            SYMULACJA PANDEMII                        ");
-//        System.out.println("PODAJE DANE DOTYCZĄCE SYMULACJI");
-//        System.out.print("LICZBA MEDYKÓW: ");
-//        numberOfMedic =(int)scanner.nextInt();
-//        System.out.print("LICZBA CHORYCH: ");
-//        numberOfSick =scanner.nextInt();
-//        System.out.print("LICZBA ZDROWYCH: ");
-//        numberOfHealthy =scanner.nextInt();
-//        System.out.print("SMIERTELNOSC WIRUSA (WYRAZONA W PUNKTACH PROCENTOEYCH): ");
-//        deathRateSick =scanner.nextInt();
-//        System.out.print("LICZBA TUR: ");
-//        iteration =scanner.nextInt();
 
+
+        /*WYSWIETLENIE MENU I POBRANIE ZMIENNYCH DOTYCZACYCH SYMULACJI OD UZYTKOWNIKA*/
+        boolean end=true;
+        do {
+            try {
+                InputMismatchException iae;
+
+                System.out.println("                                            SYMULACJA PANDEMII                        ");
+                System.out.println("PODAJE DANE DOTYCZĄCE SYMULACJI");
+                System.out.print("ROZMIAR POLA(KWADRAT, MINIMALNY ROZMIAR TO 2): ");
+                size =scanner.nextInt();
+                if(size<2){throw new InputMismatchException();}
+                System.out.print("LICZBA MEDYKÓW: ");
+                numberOfMedic = scanner.nextInt();
+                if(numberOfMedic<0){throw new InputMismatchException();}
+                System.out.print("LICZBA CHORYCH: ");
+                numberOfSick = scanner.nextInt();
+                if(numberOfSick<0){throw new InputMismatchException();}
+                System.out.print("LICZBA ZDROWYCH: ");
+                numberOfHealthy = scanner.nextInt();
+                if(numberOfHealthy<0){throw new InputMismatchException();}
+                System.out.print("LICZBA PRZESZKÓD: ");
+                numberOfObstacle = scanner.nextInt();
+                if(numberOfObstacle<0){throw new InputMismatchException();}
+                System.out.print("SMIERTELNOSC WIRUSA (WYRAZONA W PUNKTACH PROCENTOEYCH): ");
+                deathRateSick = scanner.nextInt();
+                if(deathRateSick<0){throw new InputMismatchException();}
+                System.out.print("LICZBA TUR: ");
+                iteration = scanner.nextInt();
+                if(iteration<0){throw new InputMismatchException();}
+
+
+                end = false;
+                numberOfObjects =numberOfHealthy+numberOfMedic+numberOfSickMedic+numberOfObstacle+numberOfSick;
+                if(size*size<numberOfObjects){
+                    System.out.println("");
+                    System.out.println("SUMA PODANYCH PRZEZ CIEBIE OBIEKTOW JEST WIEKSZ NIZ ROZMIAR POLA, UZUPELNIJ POLA JESZCZE RAZ");
+                    System.out.println("");
+                    end=true;
+                }
+
+
+            } catch (InputMismatchException iae) {
+                System.out.println("");
+                System.out.println("Argument który wprowaddziłeś nie jest prawidłowy, wprowadź go od nowa");
+                System.out.println("");
+            }
+            scanner.nextLine();
+        }while (end);
 
 
 
 
         Virus virus = new Virus(deathRateSick);        //     INICJALIZACJA KLASY WIRUS
-        int numberOfObjects =numberOfHealthy+numberOfMedic+numberOfSickMedic+numberOfObstacle+numberOfSick;                                           //     WYBIERAMY LICZBE OBIEKTOW
+        numberOfObjects =numberOfHealthy+numberOfMedic+numberOfSickMedic+numberOfObstacle+numberOfSick;                                           //     WYBIERAMY LICZBE OBIEKTOW
 //        GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfObjects), IObstacleCreator.createObstacle(numberOfObjects), IMedicCreator.createMedic(numberOfObjects), ISickCreator.createSick(numberOfObjects, virus), ISickMedicCreator.createSickMedic(numberOfObjects, virus), virus);              // INICJALIZUJEMY LISTE OBIEKATMI, ARGUMENTY DO TEJ FUNKCJI SA DOSTARCZNAE PRZEZ FUNKCJE KTORE TWORZA LISTY OBIEKTOW
         GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfHealthy), IObstacleCreator.createObstacle(numberOfObstacle), IMedicCreator.createMedic(numberOfMedic), ISickCreator.createSick(numberOfSick, virus), ISickMedicCreator.createSickMedic(numberOfSickMedic, virus), virus);
 //        LinkedList<GameObject> bigList = gameObjectList.bigListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList(), gameObjectList.getSickMedicList());                                                                                                                                                 // utworzeni listy zawierajace wszystkie gameobjecty z wyjatkiem obstacle sluży do przmeiszczania obiektow
