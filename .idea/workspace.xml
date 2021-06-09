@@ -16,7 +16,7 @@
       <change beforePath="$PROJECT_DIR$/DataFile/ProgramData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DataFile/ProgramData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/Window.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

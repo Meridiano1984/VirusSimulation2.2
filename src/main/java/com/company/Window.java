@@ -47,6 +47,33 @@ public class Window extends JPanel implements ActionListener {
         g.drawString("Ilosc medykow: " + gameObjectList.getMedicList().size(), map.length*10+100, 110);
         g.drawString("Ilosc chorych medykow: " + gameObjectList.getSickMedicList().size(), map.length*10+100, 140);
 
+        g.setFont(new Font("serif",Font.BOLD, 20));
+        g.drawString("Legenda ", map.length*10+100, 170);
+
+        g.setFont(new Font("serif",Font.ITALIC, 20));
+        g.setColor(Color.YELLOW);
+        g.fill3DRect(map.length*10+100, 190, 10, 10, true);
+        g.setColor(Color.BLACK);
+        g.drawString("Zdrowy", map.length*10+120, 200);
+
+        g.setColor(Color.RED);
+        g.fill3DRect(map.length*10+100, 220, 10, 10, true);
+        g.setColor(Color.BLACK);
+        g.drawString("Chory", map.length*10+120, 230);
+
+        g.setColor(Color.CYAN);
+        g.fill3DRect(map.length*10+100, 250, 10, 10, true);
+        g.setColor(Color.BLACK);
+        g.drawString("Medyk", map.length*10+120, 260);
+
+        g.setColor(Color.BLUE);
+        g.fill3DRect(map.length*10+100, 280, 10, 10, true);
+        g.setColor(Color.BLACK);
+        g.drawString("Chory Medyk", map.length*10+120, 290);
+
+        g.fill3DRect(map.length*10+100, 310, 10, 10, true);
+        g.drawString("Przeszkoda", map.length*10+120, 320);
+
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map.length; j++) {
                 if (map[i][j].getField().getGameObjectReference() == null) {
