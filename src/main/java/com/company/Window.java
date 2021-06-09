@@ -43,22 +43,22 @@ public class Window extends JPanel implements ActionListener {
             for (int j = 0; j < size; j++) {
                 if (map[i][j].getField().getGameObjectReference() == null) {
                     g.setColor(Color.LIGHT_GRAY);
-                    g.fillOval(10*i, 10*j, 10,10);
+                    g.fill3DRect(10*i, 10*j, 10, 10, true);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof Healthy) {
                     g.setColor(Color.YELLOW);
-                    g.fillOval(10*i, 10*j, 10,10);
+                    g.fill3DRect(10*i, 10*j, 10,10,true);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof Medic) {
                     g.setColor(Color.CYAN);
-                    g.fillOval(10*i, 10*j, 10, 10);
+                    g.fill3DRect(10*i, 10*j, 10, 10,true);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof Sick) {
                     g.setColor(Color.RED);
-                    g.fillOval(10*i, 10*j, 10, 10);
+                    g.fill3DRect(10*i, 10*j, 10, 10,true);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof Obstacle) {
                     g.setColor(Color.BLACK);
-                    g.fillOval(10*i, 10*j, 10, 10);
+                    g.fill3DRect(10*i, 10*j, 10, 10,true);
                 } else if (map[i][j].getField().getGameObjectReference() instanceof SickMedic) {
                     g.setColor(Color.BLUE);
-                    g.fillOval(10*i, 10*j, 10, 10);
+                    g.fill3DRect(10*i, 10*j, 10, 10,true);
                 }
             }
         }
