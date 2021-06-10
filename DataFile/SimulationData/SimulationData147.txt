@@ -1,0 +1,56 @@
+Tura nr 0
+Ilość obiektów: 27
+Ilość chorych: 3
+Ilość zdrowych: 3
+Ilość Medyków: 7
+Ilość Chorych Medyków: 7
+Ilość przeszkód: 7
+
+Tura nr 1
+Wyzdrowiało tyle chorych: 3
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 6
+Ilość Medyków: 7
+Ilość Chorych Medyków: 7
+
+Tura nr 2
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 6
+Ilość Medyków: 7
+Ilość Chorych Medyków: 7
+
+Tura nr 3
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 6
+Ilość Medyków: 7
+Ilość Chorych Medyków: 7
+
+Tura nr 4
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 7
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 0
+Ilość zdrowych: 6
+Ilość Medyków: 14
+Ilość Chorych Medyków: 0
+

@@ -1,6 +1,7 @@
 package com.company;
 
-import java.util.LinkedList;
+import com.company.Objects.*;
+
 import java.util.List;
 import java.util.Random;
 

@@ -1,13 +1,12 @@
 package com.company;
 
+import com.company.Handler.*;
+import com.company.Objects.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.LinkedList;
-
-import static com.company.Area.mapGameObjectInitialization;
 
 public class Window extends JPanel implements ActionListener {
 

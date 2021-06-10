@@ -1,6 +1,12 @@
 package com.company;
 
-import java.awt.*;
+import com.company.Creators.*;
+import com.company.File.FileCreator;
+import com.company.File.FileHandler;
+import com.company.File.FileInformations;
+import com.company.Handler.*;
+import com.company.Objects.*;
+
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.Scanner;

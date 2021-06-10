@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.Objects.GameObject;
+
 public class Field {
 
     private GameObject gameObjectReference;
