@@ -1,6 +1,12 @@
 package com.company;
 
-import java.awt.*;
+import com.company.Creators.*;
+import com.company.File.FileCreator;
+import com.company.File.FileHandler;
+import com.company.File.FileInformations;
+import com.company.Handler.*;
+import com.company.Objects.*;
+
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -15,6 +21,7 @@ public class Main {
         FileHandler fileHandler = new FileHandler();
         fileInformations = fileCreator.fileInitialization();
         String sentence = new String();
+
 
         /*ZADEKLAROWNIE I INICJALIZACJIA WIEKSZOSCI ZMIENNYCH PRYMITYWNYCH UZYWANYCH W PROGRAMIE */
         int size = 20;
@@ -37,7 +44,7 @@ public class Main {
 
                 System.out.println("                                            SYMULACJA PANDEMII                        ");
                 System.out.println("PODAJE DANE DOTYCZĄCE SYMULACJI");
-                System.out.print("ROZMIAR POLA(KWADRAT, MINIMALNY ROZMIAR TO 2): ");
+                System.out.print("ROZMIAR POLA(KWADRAT, MINIMALNY ROZMIAR TO 2, A MAKSYMALNY 80): ");
                 size =scanner.nextInt();
                 if(size<2 || size>80){throw new InputMismatchException();}
                 System.out.print("LICZBA ZDROWYCH: ");
@@ -55,7 +62,7 @@ public class Main {
                 System.out.print("LICZBA PRZESZKÓD: ");
                 numberOfObstacle = scanner.nextInt();
                 if(numberOfObstacle<0){throw new InputMismatchException();}
-                System.out.print("SMIERTELNOSC WIRUSA (WYRAZONA W PUNKTACH PROCENTOEYCH): ");
+                System.out.print("SMIERTELNOSC WIRUSA (WYRAZONA W PUNKTACH PROCENTOWYCH): ");
                 deathRateSick = scanner.nextInt();
                 if(deathRateSick<0){throw new InputMismatchException();}
                 System.out.print("LICZBA TUR: ");
@@ -86,15 +93,11 @@ public class Main {
 
         Virus virus = new Virus(deathRateSick);        //     INICJALIZACJA KLASY WIRUS
         numberOfObjects =numberOfHealthy+numberOfMedic+numberOfSickMedic+numberOfObstacle+numberOfSick;                                           //     WYBIERAMY LICZBE OBIEKTOW
-//        GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfObjects), IObstacleCreator.createObstacle(numberOfObjects), IMedicCreator.createMedic(numberOfObjects), ISickCreator.createSick(numberOfObjects, virus), ISickMedicCreator.createSickMedic(numberOfObjects, virus), virus);              // INICJALIZUJEMY LISTE OBIEKATMI, ARGUMENTY DO TEJ FUNKCJI SA DOSTARCZNAE PRZEZ FUNKCJE KTORE TWORZA LISTY OBIEKTOW
         GameObjectList gameObjectList = new GameObjectList(numberOfObjects, IHealthyCreator.createHealthy(numberOfHealthy), IObstacleCreator.createObstacle(numberOfObstacle), IMedicCreator.createMedic(numberOfMedic), ISickCreator.createSick(numberOfSick, virus), ISickMedicCreator.createSickMedic(numberOfSickMedic, virus), virus);
-//        LinkedList<GameObject> bigList = gameObjectList.bigListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList(), gameObjectList.getSickMedicList());                                                                                                                                                 // utworzeni listy zawierajace wszystkie gameobjecty z wyjatkiem obstacle sluży do przmeiszczania obiektow
+//      LinkedList<GameObject> bigList = gameObjectList.bigListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList(), gameObjectList.getSickMedicList());                                                                                                                                                 // utworzeni listy zawierajace wszystkie gameobjecty z wyjatkiem obstacle sluży do przmeiszczania obiektow
         LinkedList<GameObject> movingList = gameObjectList.movingListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList());
-        //Area[][] map = new Map[50][50];
-        Area[][] map = Area.mapGenerator(size, size);                                  //TWORZENIE MAPY O WYMIARACH 50 NA 50 ZA POMOCA SPECJALNEJ FUNKCJI
+        Area[][] map = Area.mapGenerator(size, size);                                  //TWORZENIE MAPY O WYMIARACH size NA size ZA POMOCA SPECJALNEJ FUNKCJI
 
-//        MoveHandler moveTour = new MoveHandler(map, bigList);
-// TWORZENIE OBIEKTU WYWOLUJACEGO CHODZENIE
 
 
         SickHandler sickHandler = new SickHandler(map, null, size);                  //TWORZENIE OBIEKTOW HENDLEROW NA KTORYCH RZECZ BEDA WYWOLYWANE FUNKCJE
@@ -107,13 +110,11 @@ public class Main {
         map = map[0][0].mapGameObjectInitialization(map, gameObjectList.getObstacleList(), gameObjectList.getHealthyList(), gameObjectList.getSickList(), gameObjectList.getMedicList(), gameObjectList.getSickMedicList(), size);       //INICJALIZOWANIE MAPY OBIEKATMI Z LIST
 
 
-        //PRZYKLADOWE PARE TUR PRZEMIESZCZANIA//
-
-        Window window = new Window(map,numberOfObjects,numberOfHealthy,numberOfSick,numberOfMedic,numberOfSickMedic,numberOfObstacle,gameObjectList);
+        Window window = new Window(map,numberOfObjects,numberOfHealthy,numberOfSick,numberOfMedic,numberOfSickMedic,numberOfObstacle,gameObjectList, virus);
         window.repaint();
         Thread.sleep(2000);
 
-        sentence = ("Tura nr " + (0) + "\nIlość osób: " + numberOfObjects +"\nIlość chorych: " + numberOfSick + "\nIlość zdrowych: " + numberOfHealthy + "\nIlość Medyków: " + numberOfMedic + "\nIlość Chorych Medyków: " + numberOfSickMedic + "\nIlość przeszkód: " + numberOfObstacle +"\n\n");
+        sentence = ("Tura nr " + (0) + "\nIlość obiektów: " + numberOfObjects +"\nIlość chorych: " + numberOfSick + "\nIlość zdrowych: " + numberOfHealthy + "\nIlość Medyków: " + numberOfMedic + "\nIlość Chorych Medyków: " + numberOfSickMedic + "\nIlość przeszkód: " + numberOfObstacle +"\n\n");
         fileHandler.programDataFileWriter(sentence,fileInformations);
 
         Area.MapDisplay(map, size);
@@ -151,7 +152,7 @@ public class Main {
 //            Area.MapDisplay(map, size);
 //
 
-            sickMedicHandler.checkingNumberOfIteration(map, gameObjectList.getSickMedicList(), gameObjectList.getMedicList(), medicHandler, size);
+            sickMedicHandler.checkingNumberOfIteration(gameObjectList.getSickMedicList());
 
             sickMedicHandler.transformationToMedicOrDying(map,gameObjectList.getMedicList(),gameObjectList.getSickMedicList(),medicHandler,size,gameObjectList);
 //
@@ -190,7 +191,6 @@ public class Main {
 
         }
         window.repaint();
-
 
     }
 }

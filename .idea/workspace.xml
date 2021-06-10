@@ -14,8 +14,42 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataFile/ProgramData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DataFile/ProgramData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/FileCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/FileHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/FileInformations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/GameObjectList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/GameObjectList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/HealthyHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/MedicHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/MoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/SickHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/SickMedicHandler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/Window.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/FileCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/File/FileCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/File/FileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/FileInformations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/File/FileInformations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Objects/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/GameObjectList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/GameObjectList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Healthy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Objects/Healthy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/HealthyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Handler/HealthyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IHealthyCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Creators/IHealthyCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IMedicCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Creators/IMedicCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IObstacleCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Creators/IObstacleCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/ISickCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Creators/ISickCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/ISickMedicCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Creators/ISickMedicCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/InteractionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Handler/InteractionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Medic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Objects/Medic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MedicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Handler/MedicHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Handler/MoveHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Obstacle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Objects/Obstacle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Sick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Objects/Sick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Handler/SickHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickMedic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Objects/SickMedic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickMedicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Handler/SickMedicHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,10 +110,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/company/Creators" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dell\Desktop\pwr\II semestr\Programowanie obiektowe\projekt\Projekt - Virus\VirusSimulation2.2\src\main\java\com\company\Creators" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -87,7 +126,7 @@
       <module name="VirusSimulation2.2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="com.company.File.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,7 +139,7 @@
       <module name="VirusSimulation2.2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="com.company.File.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

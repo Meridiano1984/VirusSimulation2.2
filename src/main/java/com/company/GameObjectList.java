@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.Objects.*;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -127,8 +129,8 @@ public class GameObjectList {
 
     public GameObjectList regeneration(GameObjectList gameObjectList){
 
-        for(Healthy helathy: gameObjectList.getHealthyList()){
-            helathy.setMoved(false);
+        for(Healthy healthy: gameObjectList.getHealthyList()){
+            healthy.setMoved(false);
         }
         for(Medic medic: gameObjectList.getMedicList()){
             medic.setMoved(false);
@@ -159,7 +161,7 @@ public class GameObjectList {
         System.out.println("Liczba obiektow to: " + i + "+ liczba obstacle");
     }
 
-    protected LinkedList<Sick> killSick(LinkedList<Sick> sickList, Sick sickToKill){
+    public LinkedList<Sick> killSick(LinkedList<Sick> sickList, Sick sickToKill){
 
         int rememberI =-1;
         for(int i=0;i<sickList.size();i++){
@@ -171,13 +173,10 @@ public class GameObjectList {
         if(rememberI!=-1) {
             sickList.remove(sickList.get(rememberI));
         }
-
-
-
         return sickList;
     }
 
-    protected LinkedList<Medic> killMedic(LinkedList<Medic> medicList, Medic medicToKill){
+    public LinkedList<Medic> killMedic(LinkedList<Medic> medicList, Medic medicToKill){
         int rememberI =-1;
         for(int i=0;i<medicList.size();i++){
 
@@ -191,7 +190,7 @@ public class GameObjectList {
         return medicList;
     }
 
-    protected LinkedList<SickMedic> killSickMedic(LinkedList<SickMedic> sickMedicList, SickMedic sickMedicToKill){
+    public LinkedList<SickMedic> killSickMedic(LinkedList<SickMedic> sickMedicList, SickMedic sickMedicToKill){
 
         int rememberI =-1;
         for(int i=0;i<sickMedicList.size();i++){
@@ -207,7 +206,7 @@ public class GameObjectList {
         return sickMedicList;
     }
 
-    protected LinkedList<Healthy> killHealthy(LinkedList <Healthy> healthyList, Healthy healthyToKill){
+    public LinkedList<Healthy> killHealthy(LinkedList <Healthy> healthyList, Healthy healthyToKill){
 
 
         int rememberI =-1;

@@ -1,6 +1,7 @@
 package com.company;
 
-import java.util.LinkedList;
+import com.company.Objects.*;
+
 import java.util.List;
 import java.util.Random;
 
@@ -21,25 +22,14 @@ public class Area {
         return positionX;
     }
 
-    public void setPositionX(int positionX) {
-        this.positionX = positionX;
-    }
-
     public int getPositionY() {
         return positionY;
-    }
-
-    public void setPositionY(int positionY) {
-        this.positionY = positionY;
     }
 
     public Field getField() {
         return field;
     }
 
-    public void setField(Field field) {
-        this.field = field;
-    }
 
 
     public static Area[][] mapGenerator(int x, int y) {
@@ -84,36 +74,14 @@ public class Area {
 
 
     // FUNKCJA INICJALIZUJAC MAPE
-    public static Area[][] mapObstacleInitialization(Area[][] map, List<Obstacle> obstacleList, int size) {
+    private static Area[][] mapObstacleInitialization(Area[][] map, List<Obstacle> obstacleList, int size) {
 
         int positionX;
         int positionY;
         Random random = new Random();
-        boolean end = true;
+
         int i = 0, j = 0, k = 0;
 
-//        for (Obstacle obstacle : obstacleList) {
-//
-//            i++;
-//            do {
-//                positionX = random.nextInt(50);
-//                positionY = random.nextInt(50);
-//
-//                if (map[positionX][positionY].getField().getGameObjectReference() == null) {
-//
-//                    map[positionX][positionY].getField().setGameObjectReference(obstacle);
-//                    end =false;
-//                    k++;
-//                } else {
-//                    System.out.println("nie jest NULLEM dla iteracji nr: "+ j + " x: " + positionX + " y: " + positionY);
-//                    System.out.println(map[positionX][positionY].getField().getGameObjectReference());
-//                    map[positionX][positionY].getField().setGameObjectReference(null);
-//                    System.out.println(map[positionX][positionY].getField().getGameObjectReference());
-//                }
-//
-//                j++;
-//            }while (end);
-//        }
 
         for (Obstacle obstacle : obstacleList) {
 
@@ -128,35 +96,17 @@ public class Area {
             map[positionX][positionY].getField().setGameObjectReference(obstacle);
         }
 
-
         System.out.println("Liczba obstacle to: " + i + " petla do while wykonala sie: " + j + " a w niej if wykonal sie: " + k);
         return map;
 
     }
 
-    public static Area[][] mapHealthyInitialization(Area[][] map, List<Healthy> healthyList, int size) {
+    private static Area[][] mapHealthyInitialization(Area[][] map, List<Healthy> healthyList, int size) {
 
         int positionX;
         int positionY;
         Random random = new Random();
-        boolean end = true;
         int i = 0;
-
-//        for(Healthy healthy: healthyList){
-//
-//            i++;
-//
-//            do {
-//                positionX = random.nextInt(50);
-//                positionY = random.nextInt(50);
-//
-//                if (map[positionX][positionY].getField().getGameObjectReference() == null) {
-//
-//                    map[positionX][positionY].getField().setGameObjectReference(healthy);
-//                    end =false;
-//                }
-//            }while (end);
-//        }
 
         for (Healthy healthy : healthyList) {
 
@@ -175,29 +125,13 @@ public class Area {
         return map;
     }
 
-    public static Area[][] mapSickInitialization(Area[][] map, List<Sick> sickList, int size) {
+    private static Area[][] mapSickInitialization(Area[][] map, List<Sick> sickList, int size) {
 
         int positionX;
         int positionY;
         Random random = new Random();
-        boolean end = true;
         int i = 0;
 
-//        for(Sick sick: sickList){
-//
-//            i++;
-//
-//            do {
-//                positionX = random.nextInt(50);
-//                positionY = random.nextInt(50);
-//
-//                if (map[positionX][positionY].getField().getGameObjectReference() == null) {
-//
-//                    map[positionX][positionY].getField().setGameObjectReference(sick);
-//                    end =false;
-//                }
-//            }while (end);
-//        }
 
         for (Sick sick : sickList) {
 
@@ -216,29 +150,12 @@ public class Area {
         return map;
     }
 
-    public static Area[][] mapMedicInitialization(Area[][] map, List<Medic> medicList, int size) {
+    private static Area[][] mapMedicInitialization(Area[][] map, List<Medic> medicList, int size) {
 
         int positionX;
         int positionY;
         Random random = new Random();
-        boolean end = true;
         int i = 0;
-
-//        for(Medic medic: medicList){
-//
-//            i++;
-//
-//            do {
-//                positionX = random.nextInt(50);
-//                positionY = random.nextInt(50);
-//
-//                if (map[positionX][positionY].getField().getGameObjectReference() == null) {
-//
-//                    map[positionX][positionY].getField().setGameObjectReference(medic);
-//                    end =false;
-//                }
-//            }while (end);
-//        }
 
         for (Medic medic : medicList) {
 
@@ -258,29 +175,12 @@ public class Area {
         return map;
     }
 
-    public static Area[][] mapSickMedicInitialization(Area[][] map, List<SickMedic> sickMedicList, int size) {
+    private static Area[][] mapSickMedicInitialization(Area[][] map, List<SickMedic> sickMedicList, int size) {
 
         int positionX;
         int positionY;
         Random random = new Random();
-        boolean end = true;
         int i = 0;
-
-//        for(SickMedic sickMedic: sickMedicList){
-//
-//            i++;
-//
-//            do {
-//                positionX = random.nextInt(50);
-//                positionY = random.nextInt(50);
-//
-//                if (map[positionX][positionY].getField().getGameObjectReference() == null) {
-//
-//                    map[positionX][positionY].getField().setGameObjectReference(sickMedic);
-//                    end =false;
-//                }
-//            }while (end);
-//        }
 
         for (SickMedic sickMedic : sickMedicList) {
 

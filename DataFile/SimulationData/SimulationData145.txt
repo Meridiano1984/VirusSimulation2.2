@@ -1,0 +1,80 @@
+Tura nr 0
+Ilość osób: 2000
+Ilość chorych: 2000
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+Ilość przeszkód: 0
+
+Tura nr 1
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 988
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 1012
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 2
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 526
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 486
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 3
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 230
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 256
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 4
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 130
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 126
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 5
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 64
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 62
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 6
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 32
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 30
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+

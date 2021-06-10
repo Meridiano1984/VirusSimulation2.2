@@ -1,19 +1,17 @@
 package com.company;
 
+import com.company.Handler.*;
+import com.company.Objects.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.LinkedList;
-
-import static com.company.Area.mapGameObjectInitialization;
 
 public class Window extends JPanel implements ActionListener {
 
-//    int map.length = 40;
     Area[][] map;
-    Virus virus = new Virus(2);
+    Virus virus;
     int numberOfObjects;
     int numberOfHealthy;
     int numberOfSick;
@@ -21,7 +19,6 @@ public class Window extends JPanel implements ActionListener {
     int numberOfSickMedic;
     int numberOfObstacle;
     GameObjectList gameObjectList;
-//    LinkedList<GameObject> movingList = gameObjectList.movingListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList());
 
 
     SickHandler sickHandler;                  //TWORZENIE OBIEKTOW HENDLEROW NA KTORYCH RZECZ BEDA WYWOLYWANE FUNKCJE
@@ -30,10 +27,6 @@ public class Window extends JPanel implements ActionListener {
     MedicHandler medicHandler;
     MoveHandler moveHandler ;
 
-
-//    public static void main(String[] arg){
-//        Window window = new Window();
-//    }
 
 
     public void paint(Graphics g) {
@@ -46,33 +39,34 @@ public class Window extends JPanel implements ActionListener {
         g.drawString("Ilosc chorych: " + gameObjectList.getSickList().size(), map.length*10+100, 80);
         g.drawString("Ilosc medykow: " + gameObjectList.getMedicList().size(), map.length*10+100, 110);
         g.drawString("Ilosc chorych medykow: " + gameObjectList.getSickMedicList().size(), map.length*10+100, 140);
+        g.drawString("Ilosc przeszkod:" + gameObjectList.getObstacleList().size(), map.length*10+100, 170);
 
         g.setFont(new Font("serif",Font.BOLD, 20));
-        g.drawString("Legenda ", map.length*10+100, 170);
+        g.drawString("Legenda ", map.length*10+100, 200);
 
         g.setFont(new Font("serif",Font.ITALIC, 20));
         g.setColor(Color.YELLOW);
-        g.fill3DRect(map.length*10+100, 190, 10, 10, true);
-        g.setColor(Color.BLACK);
-        g.drawString("Zdrowy", map.length*10+120, 200);
-
-        g.setColor(Color.RED);
         g.fill3DRect(map.length*10+100, 220, 10, 10, true);
         g.setColor(Color.BLACK);
-        g.drawString("Chory", map.length*10+120, 230);
+        g.drawString("Zdrowy", map.length*10+120, 230);
 
-        g.setColor(Color.CYAN);
+        g.setColor(Color.RED);
         g.fill3DRect(map.length*10+100, 250, 10, 10, true);
         g.setColor(Color.BLACK);
-        g.drawString("Medyk", map.length*10+120, 260);
+        g.drawString("Chory", map.length*10+120, 260);
 
-        g.setColor(Color.BLUE);
+        g.setColor(Color.CYAN);
         g.fill3DRect(map.length*10+100, 280, 10, 10, true);
         g.setColor(Color.BLACK);
-        g.drawString("Chory Medyk", map.length*10+120, 290);
+        g.drawString("Medyk", map.length*10+120, 290);
 
+        g.setColor(Color.BLUE);
         g.fill3DRect(map.length*10+100, 310, 10, 10, true);
-        g.drawString("Przeszkoda", map.length*10+120, 320);
+        g.setColor(Color.BLACK);
+        g.drawString("Chory Medyk", map.length*10+120, 320);
+
+        g.fill3DRect(map.length*10+100, 340, 10, 10, true);
+        g.drawString("Przeszkoda", map.length*10+120, 350);
 
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map.length; j++) {
@@ -101,7 +95,7 @@ public class Window extends JPanel implements ActionListener {
 
 
 
-    public Window(Area[][] map,int numberOfObjects, int numberOfHealthy, int numberOfSick, int numberOfMedic, int numberOfSickMedic,int numberOfObstacle,GameObjectList gameObjectList){
+    public Window(Area[][] map,int numberOfObjects, int numberOfHealthy, int numberOfSick, int numberOfMedic, int numberOfSickMedic,int numberOfObstacle,GameObjectList gameObjectList, Virus virus){
         JFrame frame = new JFrame("Simulation");
         frame.setSize(800,600);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -119,17 +113,11 @@ public class Window extends JPanel implements ActionListener {
         this.numberOfSickMedic = numberOfSickMedic;
         this.numberOfMedic = numberOfMedic;
         this.numberOfObstacle = numberOfObstacle;
+        this.virus= virus;
 
         this.gameObjectList = gameObjectList;
 
         this.map =map;
-
-//        mapGameObjectInitialization(map,
-//                gameObjectList.getObstacleList(),
-//                gameObjectList.getHealthyList(),
-//                gameObjectList.getSickList(),
-//                gameObjectList.getMedicList(), gameObjectList.getSickMedicList(),
-//                map.length);
 
 //        Timer t = new Timer(2000, this);
 //        t.restart();
