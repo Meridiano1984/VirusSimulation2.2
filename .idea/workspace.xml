@@ -9,48 +9,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataFile/ProgramData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DataFile/ProgramData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/FileCreator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/FileHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/FileInformations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/GameObjectList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/GameObjectList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/HealthyHandler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/MedicHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/MoveHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/SickHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/SickMedicHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/company/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/company/Window.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Area.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/FileCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/File/FileCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/File/FileHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/FileInformations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/File/FileInformations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Objects/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/GameObjectList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/GameObjectList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Healthy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Objects/Healthy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/HealthyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Handler/HealthyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IHealthyCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Creators/IHealthyCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IMedicCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Creators/IMedicCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IObstacleCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Creators/IObstacleCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/ISickCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Creators/ISickCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/ISickMedicCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Creators/ISickMedicCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/InteractionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Handler/InteractionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Medic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Objects/Medic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MedicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Handler/MedicHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Handler/MoveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Obstacle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Objects/Obstacle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Sick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Objects/Sick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Handler/SickHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickMedic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Objects/SickMedic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SickMedicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Handler/SickMedicHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

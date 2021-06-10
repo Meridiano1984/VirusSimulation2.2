@@ -1,0 +1,167 @@
+Index: src/main/java/com/company/Window.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\r\n\r\nimport javax.swing.*;\r\nimport java.awt.*;\r\nimport java.awt.event.ActionEvent;\r\nimport java.awt.event.ActionListener;\r\nimport java.util.ArrayList;\r\nimport java.util.LinkedList;\r\n\r\nimport static com.company.Area.mapGameObjectInitialization;\r\n\r\npublic class Window extends JPanel implements ActionListener {\r\n\r\n//    int map.length = 40;\r\n    Area[][] map;\r\n    Virus virus = new Virus(2);\r\n    int numberOfObjects;\r\n    int numberOfHealthy;\r\n    int numberOfSick;\r\n    int numberOfMedic;\r\n    int numberOfSickMedic;\r\n    int numberOfObstacle;\r\n    GameObjectList gameObjectList;\r\n//    LinkedList<GameObject> movingList = gameObjectList.movingListCreator(gameObjectList.getHealthyList(), gameObjectList.getMedicList(), gameObjectList.getSickList());\r\n\r\n\r\n    SickHandler sickHandler;                  //TWORZENIE OBIEKTOW HENDLEROW NA KTORYCH RZECZ BEDA WYWOLYWANE FUNKCJE\r\n    HealthyHandler healthyHandler;\r\n    SickMedicHandler sickMedicHandler;\r\n    MedicHandler medicHandler;\r\n    MoveHandler moveHandler ;\r\n\r\n\r\n//    public static void main(String[] arg){\r\n//        Window window = new Window();\r\n//    }\r\n\r\n\r\n    public void paint(Graphics g) {\r\n\r\n        super.paintComponent(g);\r\n        g.setColor(Color.BLACK);\r\n        g.setFont(new Font(\"serif\",Font.ITALIC, 20));\r\n        g.drawString(\"Tura nr: \" + Area.numberOfIteration, map.length*10 + 100, 20);\r\n        g.drawString(\"Ilosc zdrowych: \" + gameObjectList.getHealthyList().size(), map.length*10+100, 50);\r\n        g.drawString(\"Ilosc chorych: \" + gameObjectList.getSickList().size(), map.length*10+100, 80);\r\n        g.drawString(\"Ilosc medykow: \" + gameObjectList.getMedicList().size(), map.length*10+100, 110);\r\n        g.drawString(\"Ilosc chorych medykow: \" + gameObjectList.getSickMedicList().size(), map.length*10+100, 140);\r\n\r\n        for (int i = 0; i < map.length; i++) {\r\n            for (int j = 0; j < map.length; j++) {\r\n                if (map[i][j].getField().getGameObjectReference() == null) {\r\n                    g.setColor(Color.LIGHT_GRAY);\r\n                    g.fill3DRect(10*j, 10*i, 10, 10, true);\r\n                } else if (map[i][j].getField().getGameObjectReference() instanceof Healthy) {\r\n                    g.setColor(Color.YELLOW);\r\n                    g.fill3DRect(10*j, 10*i, 10,10,true);\r\n                } else if (map[i][j].getField().getGameObjectReference() instanceof Medic) {\r\n                    g.setColor(Color.CYAN);\r\n                    g.fill3DRect(10*j, 10*i, 10, 10,true);\r\n                } else if (map[i][j].getField().getGameObjectReference() instanceof Sick) {\r\n                    g.setColor(Color.RED);\r\n                    g.fill3DRect(10*j, 10*i, 10, 10,true);\r\n                } else if (map[i][j].getField().getGameObjectReference() instanceof Obstacle) {\r\n                    g.setColor(Color.BLACK);\r\n                    g.fill3DRect(10*j, 10*i, 10, 10,true);\r\n                } else if (map[i][j].getField().getGameObjectReference() instanceof SickMedic) {\r\n                    g.setColor(Color.BLUE);\r\n                    g.fill3DRect(10*j, 10*i, 10, 10,true);\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n\r\n    public Window(Area[][] map,int numberOfObjects, int numberOfHealthy, int numberOfSick, int numberOfMedic, int numberOfSickMedic,int numberOfObstacle,GameObjectList gameObjectList){\r\n        JFrame frame = new JFrame(\"Simulation\");\r\n        frame.setSize(800,600);\r\n        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\r\n\r\n        sickHandler =new SickHandler(map, null, map.length);\r\n        healthyHandler = new HealthyHandler(map, null, map.length);\r\n        sickMedicHandler = new SickMedicHandler(map, null, map.length);\r\n        medicHandler = new MedicHandler(map, null, map.length);\r\n        moveHandler = new MoveHandler(map, null);\r\n\r\n\r\n        this.numberOfObjects =numberOfObjects;\r\n        this.numberOfHealthy = numberOfHealthy;\r\n        this.numberOfSick =numberOfSick;\r\n        this.numberOfSickMedic = numberOfSickMedic;\r\n        this.numberOfMedic = numberOfMedic;\r\n        this.numberOfObstacle = numberOfObstacle;\r\n\r\n        this.gameObjectList = gameObjectList;\r\n\r\n        this.map =map;\r\n\r\n//        mapGameObjectInitialization(map,\r\n//                gameObjectList.getObstacleList(),\r\n//                gameObjectList.getHealthyList(),\r\n//                gameObjectList.getSickList(),\r\n//                gameObjectList.getMedicList(), gameObjectList.getSickMedicList(),\r\n//                map.length);\r\n\r\n//        Timer t = new Timer(2000, this);\r\n//        t.restart();\r\n        frame.add(this);\r\n        frame.setVisible(true);\r\n    }\r\n\r\n    @Override\r\n    public void actionPerformed(ActionEvent e) {\r\n        repaint();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/company/Window.java b/src/main/java/com/company/Window.java
+--- a/src/main/java/com/company/Window.java	(revision d894dcde9c81ba7c628a9f08dc64f3b61a938476)
++++ b/src/main/java/com/company/Window.java	(date 1623278461658)
+@@ -47,6 +47,33 @@
+         g.drawString("Ilosc medykow: " + gameObjectList.getMedicList().size(), map.length*10+100, 110);
+         g.drawString("Ilosc chorych medykow: " + gameObjectList.getSickMedicList().size(), map.length*10+100, 140);
+ 
++        g.setFont(new Font("serif",Font.BOLD, 20));
++        g.drawString("Legenda ", map.length*10+100, 170);
++
++        g.setFont(new Font("serif",Font.ITALIC, 20));
++        g.setColor(Color.YELLOW);
++        g.fill3DRect(map.length*10+100, 190, 10, 10, true);
++        g.setColor(Color.BLACK);
++        g.drawString("Zdrowy", map.length*10+120, 200);
++
++        g.setColor(Color.RED);
++        g.fill3DRect(map.length*10+100, 220, 10, 10, true);
++        g.setColor(Color.BLACK);
++        g.drawString("Chory", map.length*10+120, 230);
++
++        g.setColor(Color.CYAN);
++        g.fill3DRect(map.length*10+100, 250, 10, 10, true);
++        g.setColor(Color.BLACK);
++        g.drawString("Medyk", map.length*10+120, 260);
++
++        g.setColor(Color.BLUE);
++        g.fill3DRect(map.length*10+100, 280, 10, 10, true);
++        g.setColor(Color.BLACK);
++        g.drawString("Chory Medyk", map.length*10+120, 290);
++
++        g.fill3DRect(map.length*10+100, 310, 10, 10, true);
++        g.drawString("Przeszkoda", map.length*10+120, 320);
++
+         for (int i = 0; i < map.length; i++) {
+             for (int j = 0; j < map.length; j++) {
+                 if (map[i][j].getField().getGameObjectReference() == null) {
+Index: DataFile/SimulationData/SimulationData133.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/DataFile/SimulationData/SimulationData133.txt b/DataFile/SimulationData/SimulationData133.txt
+--- a/DataFile/SimulationData/SimulationData133.txt	(revision d894dcde9c81ba7c628a9f08dc64f3b61a938476)
++++ b/DataFile/SimulationData/SimulationData133.txt	(date 1623278461681)
+@@ -1,0 +1,32 @@
++Tura nr 0
++Ilość osób: 8
++Ilość chorych: 2
++Ilość zdrowych: 2
++Ilość Medyków: 2
++Ilość Chorych Medyków: 0
++Ilość przeszkód: 2
++
++Tura nr 1
++Wyzdrowiało tyle chorych: 1
++Zachorowało tyle zdrowych: 0
++Wyleczyło się tyle Lekarzy z choroby: 0
++Tyle Medyków zachorowało: 0
++Umarło tyle chorych: 0
++Umarło tyle zarażonych lekarzy: 0
++Ilość chorych: 1
++Ilość zdrowych: 3
++Ilość Medyków: 2
++Ilość Chorych Medyków: 0
++
++Tura nr 2
++Wyzdrowiało tyle chorych: 1
++Zachorowało tyle zdrowych: 0
++Wyleczyło się tyle Lekarzy z choroby: 0
++Tyle Medyków zachorowało: 0
++Umarło tyle chorych: 0
++Umarło tyle zarażonych lekarzy: 0
++Ilość chorych: 0
++Ilość zdrowych: 4
++Ilość Medyków: 2
++Ilość Chorych Medyków: 0
++
+Index: DataFile/SimulationData/SimulationData138.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/DataFile/SimulationData/SimulationData138.txt b/DataFile/SimulationData/SimulationData138.txt
+--- a/DataFile/SimulationData/SimulationData138.txt	(revision d894dcde9c81ba7c628a9f08dc64f3b61a938476)
++++ b/DataFile/SimulationData/SimulationData138.txt	(date 1623278461669)
+@@ -1,0 +1,32 @@
++Tura nr 0
++Ilość osób: 8
++Ilość chorych: 2
++Ilość zdrowych: 2
++Ilość Medyków: 2
++Ilość Chorych Medyków: 0
++Ilość przeszkód: 2
++
++Tura nr 1
++Wyzdrowiało tyle chorych: 1
++Zachorowało tyle zdrowych: 0
++Wyleczyło się tyle Lekarzy z choroby: 0
++Tyle Medyków zachorowało: 0
++Umarło tyle chorych: 0
++Umarło tyle zarażonych lekarzy: 0
++Ilość chorych: 1
++Ilość zdrowych: 3
++Ilość Medyków: 2
++Ilość Chorych Medyków: 0
++
++Tura nr 2
++Wyzdrowiało tyle chorych: 1
++Zachorowało tyle zdrowych: 0
++Wyleczyło się tyle Lekarzy z choroby: 0
++Tyle Medyków zachorowało: 0
++Umarło tyle chorych: 0
++Umarło tyle zarażonych lekarzy: 0
++Ilość chorych: 0
++Ilość zdrowych: 4
++Ilość Medyków: 2
++Ilość Chorych Medyków: 0
++
+Index: DataFile/SimulationData/SimulationData137.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/DataFile/SimulationData/SimulationData137.txt b/DataFile/SimulationData/SimulationData137.txt
+--- a/DataFile/SimulationData/SimulationData137.txt	(revision d894dcde9c81ba7c628a9f08dc64f3b61a938476)
++++ b/DataFile/SimulationData/SimulationData137.txt	(date 1623278461671)
+@@ -1,0 +1,32 @@
++Tura nr 0
++Ilość osób: 10
++Ilość chorych: 2
++Ilość zdrowych: 2
++Ilość Medyków: 2
++Ilość Chorych Medyków: 2
++Ilość przeszkód: 2
++
++Tura nr 1
++Wyzdrowiało tyle chorych: 2
++Zachorowało tyle zdrowych: 1
++Wyleczyło się tyle Lekarzy z choroby: 0
++Tyle Medyków zachorowało: 0
++Umarło tyle chorych: 0
++Umarło tyle zarażonych lekarzy: 0
++Ilość chorych: 1
++Ilość zdrowych: 3
++Ilość Medyków: 2
++Ilość Chorych Medyków: 2
++
++Tura nr 2
++Wyzdrowiało tyle chorych: 0
++Zachorowało tyle zdrowych: 0
++Wyleczyło się tyle Lekarzy z choroby: 0
++Tyle Medyków zachorowało: 0
++Umarło tyle chorych: 0
++Umarło tyle zarażonych lekarzy: 0
++Ilość chorych: 1
++Ilość zdrowych: 3
++Ilość Medyków: 2
++Ilość Chorych Medyków: 2
++

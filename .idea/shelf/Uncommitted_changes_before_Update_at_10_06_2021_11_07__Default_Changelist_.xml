@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_10_06_2021_11_07_[Default_Changelist]" date="1623316058761" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2021_11_07_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 10.06.2021 11:07 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/6.7/javaCompile/taskHistory.bin" />
+    <option name="AFTER_PATH" value=".gradle/6.7/javaCompile/taskHistory.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2021_11_07_[Default_Changelist]/taskHistory.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/classes/java/main/com/company/Window.class" />
+    <option name="AFTER_PATH" value="build/classes/java/main/com/company/Window.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2021_11_07_[Default_Changelist]/Window.class" />
+  </binary>
+</changelist>
