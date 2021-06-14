@@ -1,0 +1,92 @@
+Tura nr 0
+Ilość obiektów: 21
+Ilość chorych: 20
+Ilość zdrowych: 0
+Ilość Medyków: 1
+Ilość Chorych Medyków: 0
+Ilość przeszkód: 0
+
+Tura nr 1
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 1
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 20
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 1
+
+Tura nr 2
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 20
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 1
+
+Tura nr 3
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 20
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 1
+
+Tura nr 4
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 1
+Ilość chorych: 20
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 5
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 20
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 6
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 20
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+
+Tura nr 7
+Wyzdrowiało tyle chorych: 0
+Zachorowało tyle zdrowych: 0
+Wyleczyło się tyle Lekarzy z choroby: 0
+Tyle Medyków zachorowało: 0
+Umarło tyle chorych: 0
+Umarło tyle zarażonych lekarzy: 0
+Ilość chorych: 20
+Ilość zdrowych: 0
+Ilość Medyków: 0
+Ilość Chorych Medyków: 0
+

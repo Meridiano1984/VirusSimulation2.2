@@ -44,15 +44,6 @@ public class SickHandler extends InteractionHandler {
 
 
     protected boolean isMedicNearby(Area[][] map, int a, int b){
-        for(int i = a-1; i<= a+1; i++){
-            for(int j = b-1; j <= b+1; j++){
-                if(i >= 0 && j >= 0 && i < size && j< size){
-                    if(map[i][j].getField().getGameObjectReference() instanceof Medic){
-                        return true;
-                    }
-                }
-            }
-        }
         for(int i= a-2; i<= a+2; i++){
             for(int j = b-2; j <= b+2; j++){
                 if(i >=0 && j >= 0 && i<size && j<size){
